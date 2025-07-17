@@ -19,7 +19,7 @@ const Contact = () => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
     try {
-  const res = await fetch("/contact", {
+  const res = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
