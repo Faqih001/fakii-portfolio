@@ -1,0 +1,9 @@
+{
+  "name": "fakii-portfolio-server",
+  "version": "1.0.0",
+  "main": "contact.js",
+  "scripts": {
+    "start": "node contact.js"
+  },
+  "dependencies": {}
+}

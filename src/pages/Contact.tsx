@@ -9,42 +9,31 @@ import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: ""
-  });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  // Handles form submission to Express backend (SMTP)
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
+  const res = await fetch("/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(data),
       });
-      const result = await res.json();
-      if (result.success) {
+      if (res.ok) {
         toast({
           title: "Message sent successfully!",
           description: "Thank you for reaching out. I'll get back to you within 24 hours.",
         });
-  setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+        form.reset();
       } else {
+        const result = await res.json();
         toast({
           title: "Failed to send message.",
           description: result.error || "Something went wrong. Please try again later.",
@@ -206,15 +195,15 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6" method="POST">
+                  {/* Replace RESEND_FORM_ID with your actual Resend Forms form ID */}
+                  {/* See https://resend.com/forms to create a form and get your ID */}
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Full Name *</Label>
                       <Input
                         id="name"
                         name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
                         placeholder="Your full name"
                         required
                         className="transition-all focus:shadow-glow"
@@ -226,8 +215,6 @@ const Contact = () => {
                         id="email"
                         name="email"
                         type="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
                         placeholder="your.email@example.com"
                         required
                         className="transition-all focus:shadow-glow"
@@ -239,8 +226,6 @@ const Contact = () => {
                         id="phone"
                         name="phone"
                         type="tel"
-                        value={formData.phone}
-                        onChange={handleInputChange}
                         placeholder="Optional"
                         className="transition-all focus:shadow-glow"
                       />
@@ -252,8 +237,6 @@ const Contact = () => {
                     <Input
                       id="subject"
                       name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
                       placeholder="What would you like to discuss?"
                       required
                       className="transition-all focus:shadow-glow"
@@ -265,8 +248,6 @@ const Contact = () => {
                     <Textarea
                       id="message"
                       name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
                       placeholder="Tell me about your project, collaboration ideas, or any questions you have..."
                       rows={6}
                       required
