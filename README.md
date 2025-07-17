@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
 
-## Project info
+# Fakii Portfolio
 
-**URL**: https://lovable.dev/projects/5505a41a-2c97-4247-9b83-7621b7de5ca0
+A modern portfolio web application for Fakii Mohammed, built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui. Features a contact form with SMTP email delivery via Resend, deployable on Vercel.
 
-## How can I edit this code?
+## Features
+- Responsive, modern UI with shadcn/ui and Tailwind CSS
+- Contact form with email delivery (Resend SMTP, Nodemailer)
+- API route for contact form (Vercel serverless function)
+- Easy deployment to Vercel
 
-There are several ways of editing your application.
+## Getting Started (Local Development)
 
-**Use Lovable**
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5505a41a-2c97-4247-9b83-7621b7de5ca0) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### 1. Clone the repository
+```bash
+git clone https://github.com/Faqih001/fakii-portfolio.git
+cd fakii-portfolio
 ```
 
-**Edit a file directly in GitHub**
+### 2. Install dependencies
+```bash
+npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 3. Set up environment variables
+Create a `.env` file in the root directory:
+```
+REACT_APP_RESEND_API_KEY=your_resend_api_key_here
+```
 
-**Use GitHub Codespaces**
+### 4. Run the app locally
+```bash
+npm run dev
+```
+- Frontend: http://localhost:8080
+- Backend (if using Express): http://localhost:5001
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deployment (Vercel)
+1. Push your code to GitHub.
+2. Import the repo at https://vercel.com/new.
+3. In Vercel dashboard, add your `REACT_APP_RESEND_API_KEY` as an environment variable.
+4. Deploy!
 
-## What technologies are used for this project?
+### Contact API Route
+- The contact form POSTs to `/api/contact`.
+- The API route is implemented in `api/contact.js` using Nodemailer and Resend SMTP.
 
-This project is built with:
+## Customization
+- Edit your contact info in `src/pages/Contact.tsx`.
+- Update styles and content as needed.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5505a41a-2c97-4247-9b83-7621b7de5ca0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+MIT
