@@ -106,10 +106,18 @@ const Resume = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Comprehensive overview of my professional journey, skills, and achievements
             </p>
-            <Button size="lg" className="group">
-              <Download className="mr-2 h-5 w-5" />
-              Download CV PDF
-            </Button>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1Cz6UdDhUXvvWeimgEb0MtPaXo81mnCzE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="group" asChild>
+                <span>
+                  <Download className="mr-2 h-5 w-5" />
+                  Download CV PDF
+                </span>
+              </Button>
+            </a>
           </div>
         </div>
       </section>

@@ -3,8 +3,13 @@ import { AIAssistant } from "./AIAssistant";
 
 const FloatingButtons = () => {
   return (
-    <div className="fixed z-50 right-6 bottom-6 flex flex-col items-end gap-4">
-  <AIAssistant />
+    <div className="fixed z-50 right-6 bottom-6 flex flex-col items-end gap-2">
+      {/* AI Assistant Button (same size and style as WhatsApp) */}
+      <div className="w-14 h-14 flex items-center justify-center">
+        <div className="w-14 h-14">
+          <AIAssistant />
+        </div>
+      </div>
       {/* WhatsApp Button */}
       <a
         href="https://wa.me/254741140250"
