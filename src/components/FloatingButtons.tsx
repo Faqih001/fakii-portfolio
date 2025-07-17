@@ -1,16 +1,9 @@
-import { MessageCircle, MessageSquare } from "lucide-react";
-import { AIAssistant } from "./AIAssistant";
+import { MessageSquare } from "lucide-react";
 
 const FloatingButtons = () => {
   return (
     <div className="fixed z-50 right-6 bottom-6 flex flex-col items-end gap-2">
-      {/* AI Assistant Button (same size and style as WhatsApp) */}
-      <div className="w-14 h-14 flex items-center justify-center">
-        <div className="w-14 h-14">
-          <AIAssistant />
-        </div>
-      </div>
-      {/* WhatsApp Button */}
+      {/* WhatsApp Button Only */}
       <a
         href="https://wa.me/254741140250"
         target="_blank"

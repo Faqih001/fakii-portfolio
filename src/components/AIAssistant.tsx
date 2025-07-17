@@ -1,3 +1,4 @@
+// This file has been removed as per user request.
 import React, { useState, useRef, useEffect } from 'react';
 import { Bot, X, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
