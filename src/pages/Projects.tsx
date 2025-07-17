@@ -1,3 +1,4 @@
+import React from "react";
 import { ExternalLink, Github, Code, Database, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -62,6 +63,14 @@ const Projects = () => {
 
   const categories = ["All", "FinTech", "Healthcare", "Real Estate"];
 
+  // State for selected category
+  const [selectedCategory, setSelectedCategory] = React.useState<string>("All");
+
+  // Filtered projects based on selected category
+  const filteredProjects = selectedCategory === "All"
+    ? projects
+    : projects.filter((project) => project.category === selectedCategory);
+
   return (
     <div className="min-h-screen bg-gradient-subtle">
       <div className="container mx-auto px-4 py-16">
@@ -79,10 +88,11 @@ const Projects = () => {
         {/* Category Filters */}
         <div className="flex flex-wrap justify-center gap-4 mb-12 animate-scale-in">
           {categories.map((category) => (
-            <Button 
+            <Button
               key={category}
-              variant={category === "All" ? "default" : "outline"}
-              className="hover-scale"
+              variant={selectedCategory === category ? "default" : "outline"}
+              className={"hover-scale" + (selectedCategory === category ? " ring-2 ring-primary" : "")}
+              onClick={() => setSelectedCategory(category)}
             >
               {category}
             </Button>
@@ -91,9 +101,9 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
-          {projects.map((project, index) => (
-            <Card 
-              key={project.id} 
+          {filteredProjects.map((project, index) => (
+            <Card
+              key={project.id}
               className="group hover-scale transition-all duration-300 shadow-card hover:shadow-glow border-0 bg-card/50 backdrop-blur-sm animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -118,7 +128,7 @@ const Projects = () => {
                   </Badge>
                 )}
               </CardHeader>
-              
+
               <CardContent className="space-y-6">
                 {/* Technologies */}
                 <div>
