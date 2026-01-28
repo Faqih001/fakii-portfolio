@@ -151,21 +151,29 @@ const Resume = () => {
   ];
 
   const technicalSkills = {
-    "Frontend Development": ["React", "Next.js", "Vue.js", "Tailwind CSS", "Bootstrap", "JavaScript", "TypeScript"],
-    "Backend Development": ["Node.js", "Express", "Laravel", "PHP", "Python", "RESTful APIs"],
-    "Databases": ["MongoDB", "MySQL", "PostgreSQL", "MongoDB Atlas"],
-    "AI & Machine Learning": ["TensorFlow", "Python", "LSTM Models", "Data Analytics", "Scikit-learn"],
-    "DevOps & Tools": ["Git", "GitHub", "Postman", "Jira", "Docker", "Vercel"],
-    "Cybersecurity": ["Network Security", "Vulnerability Assessment", "ITSM", "Penetration Testing"]
+    "Frontend Development": ["JavaScript (ES6+)", "TypeScript", "React", "Next.js", "Vue.js", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "SASS", "Material UI"],
+    "Backend Development": ["Node.js", "Express.js", "Python (FastAPI, Django)", "PHP (Laravel)", "Firebase Functions"],
+    "Mobile Development": ["Flutter", "Dart", "React Native"],
+    "Databases & Data": ["PostgreSQL", "MySQL", "MongoDB", "Firebase Firestore", "SQLite", "Power BI", "Tableau", "Excel"],
+    "AI & Machine Learning": ["Scikit-learn", "TensorFlow", "PyTorch", "Prompt Engineering", "Predictive Analytics"],
+    "DevOps & Cloud": ["Git", "GitHub", "GitLab", "GitHub Actions", "AWS (EC2, S3)", "Firebase", "DigitalOcean", "Docker"],
+    "Testing & QA": ["Jest", "Cypress", "React Testing Library", "Selenium", "Postman", "Unit Testing", "E2E Testing"],
+    "API & Integration": ["RESTful APIs", "GraphQL", "Axios", "Fetch", "WebSockets", "JWT", "OAuth"],
+    "Healthcare Systems": ["KHIS/DHIS2", "OpenMRS", "eCHIS", "iHRIS", "KenyaEMR"],
+    "Design & UX": ["Figma", "Adobe XD", "User Research", "Usability Testing", "WCAG Accessibility"]
   };
 
   const softSkills = [
     "Team Leadership & Collaboration",
-    "Project Management",
-    "Technical Documentation",
-    "Client Communication",
-    "Problem Solving",
-    "Cross-cultural Communication"
+    "Project Management (Agile/Scrum/Kanban)",
+    "Technical Documentation & SOPs",
+    "Stakeholder Engagement",
+    "Problem Solving & Analytical Thinking",
+    "Cross-cultural Communication",
+    "Remote Work & Distributed Teams",
+    "User-Centered Design",
+    "Training & Mentorship",
+    "Process Improvement"
   ];
 
   const achievements = [
