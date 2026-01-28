@@ -124,6 +124,7 @@ Answer questions professionally and accurately based on this context. If asked a
         body: JSON.stringify({
           contents: [
             {
+              role: "user",
               parts: [
                 {
                   text: `${portfolioContext}\n\nUser question: ${userMessage}`
@@ -141,10 +142,13 @@ Answer questions professionally and accurately based on this context. If asked a
       });
 
       if (!response.ok) {
-        throw new Error("Failed to get response");
+        const errorData = await response.json().catch(() => ({}));
+        console.error("API Error:", errorData);
+        throw new Error(errorData.error?.message || `API Error: ${response.status}`);
       }
 
       const data = await response.json();
+      console.log("API Response:", data);
       
       let assistantMessage = "";
       let thinkingContent = "";
@@ -192,8 +196,8 @@ Answer questions professionally and accurately based on this context. If asked a
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-end p-4 pointer-events-none">
-      <Card className="w-full max-w-md h-[600px] flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up">
+    <div className="fixed inset-0 z-50 flex items-end justify-end sm:p-4 p-0 pointer-events-none">
+      <Card className="w-full sm:max-w-md sm:h-[600px] h-full sm:rounded-lg rounded-none flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up">
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b bg-gradient-primary text-primary-foreground">
           <div className="flex items-center space-x-3">
@@ -264,16 +268,16 @@ Answer questions professionally and accurately based on this context. If asked a
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Ask me about Fakii's experience, projects, skills..."
-              className="flex-1 px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-primary text-sm"
+              className="flex-1 px-4 py-3 sm:py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-primary text-sm"
               disabled={isLoading}
             />
             <Button
               onClick={sendMessage}
               disabled={!input.trim() || isLoading}
               size="sm"
-              className="rounded-full w-10 h-10 p-0"
+              className="rounded-full sm:w-10 sm:h-10 w-12 h-12 p-0 flex-shrink-0"
             >
-              <Send className="w-4 h-4" />
+              <Send className="sm:w-4 sm:h-4 w-5 h-5" />
             </Button>
           </div>
           <p className="text-xs text-muted-foreground mt-2 text-center">
