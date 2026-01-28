@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Connect</h3>
             <div className="flex space-x-4">
               <a
-                href="https://www.linkedin.com/in/fkii-mohammed-9-6a84213"
+                href="https://www.linkedin.com/in/fakii-mohammed-a96a84213/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:shadow-glow"
@@ -50,7 +50,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="https://github.com/Faiqih001"
+                href="https://github.com/Faqih001"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:shadow-glow"
