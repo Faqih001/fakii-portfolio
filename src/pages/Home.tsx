@@ -9,25 +9,25 @@ const Home = () => {
     {
       icon: Code,
       title: "Full-Stack Development",
-      description: "MERN Stack, Laravel, Next.js, React, Node.js",
+      description: "React, Next.js, Node.js, Python, Flutter, TypeScript, PHP/Laravel",
       color: "text-primary"
     },
     {
       icon: Brain,
-      title: "AI & Machine Learning",
-      description: "TensorFlow, Python, LSTM Models, Data Analytics",
+      title: "AI & Automation",
+      description: "Machine Learning, TensorFlow, Prompt Engineering, Workflow Automation",
       color: "text-accent"
     },
     {
       icon: Database,
-      title: "Database Management",
-      description: "MongoDB, MySQL, Database Design, API Development",
+      title: "Data & Systems",
+      description: "PostgreSQL, MongoDB, Power BI, DHIS2, OpenMRS, API Integration",
       color: "text-primary-light"
     },
     {
       icon: Shield,
-      title: "Cybersecurity",
-      description: "ITSM, Network Security, Vulnerability Assessment",
+      title: "DevOps & Security",
+      description: "Git, Docker, AWS, Firebase, JWT/OAuth, Testing & QA",
       color: "text-accent"
     }
   ];
