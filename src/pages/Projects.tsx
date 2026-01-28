@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ExternalLink, Github, Code, Database, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -465,14 +466,28 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-2 pt-4">
-                  <Button size="sm" className="flex-1">
-                    <ExternalLink className="w-3 h-3 mr-1" />
-                    View Live
-                  </Button>
-                  <Button size="sm" variant="outline" className="flex-1">
-                    <Github className="w-3 h-3 mr-1" />
-                    Code
-                  </Button>
+                  {project.liveUrl && (
+                    <Button size="sm" className="flex-1" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-3 h-3 mr-1" />
+                        View Live
+                      </a>
+                    </Button>
+                  )}
+                  {project.github && (
+                    <Button size="sm" variant="outline" className="flex-1" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-3 h-3 mr-1" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
+                  {!project.liveUrl && !project.github && (
+                    <Button size="sm" variant="outline" className="flex-1" disabled>
+                      <ExternalLink className="w-3 h-3 mr-1" />
+                      Coming Soon
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
