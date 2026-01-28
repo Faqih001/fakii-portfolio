@@ -401,15 +401,15 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="group">
-                <a href="https://fakii-portfolio-g5p1.vercel.app/contact" target="_blank" rel="noopener noreferrer">
+                <Link to="/contact">
                   Start a Conversation
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                <a href="https://github.com/Faqih001" target="_blank" rel="noopener noreferrer">
+                <Link to="/lab-challenges">
                   Explore Lab Challenges
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
