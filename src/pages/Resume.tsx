@@ -122,20 +122,32 @@ const Resume = () => {
 
   const education = [
     {
-      degree: "Bachelor of Science in Information Technology",
+      degree: "Software Engineering",
+      institution: "Power Learn Project",
+      location: "Kenya",
+      duration: "Jan 2025 - Sept 2025",
+      details: "Comprehensive software engineering program covering full-stack development, data structures, algorithms, and modern development practices"
+    },
+    {
+      degree: "Bachelors in Information Technology",
       institution: "Kabarak University",
-      location: "Nakuru, Kenya",
-      duration: "2019 – 2023",
-      details: "Specialized in Software Development, Database Systems, and Network Security"
+      location: "Kenya",
+      duration: "2018 - 2021",
+      details: "Specialized in Software Development, Database Systems, Network Security, and Information Systems Management"
     }
   ];
 
   const certifications = [
-    "IT Service Management (ITSM) Certified",
-    "Cybersecurity Fundamentals",
-    "MERN Stack Development",
-    "Healthcare IT Systems",
-    "API Development & Integration"
+    "Certified ScrumMaster (CSM) – Scrum Alliance",
+    "Professional Scrum Master I (PSM I) – Scrum.org",
+    "Google UX Design Professional Certificate – Coursera",
+    "Software Engineer - Power Learn Project Academy",
+    "DHIS2 Academy Certificates (Fundamentals & Analytics) – DHIS2.org",
+    "Introduction to Web Accessibility (WAI) – W3C (WCAG 2.1/AA foundations)",
+    "Data Analytics (Microsoft Power BI Certified) – Microsoft",
+    "Tech for Business (Microsoft Office & Google Suite) – Udemy",
+    "React JS - Udemy",
+    "Figma Design - Udemy"
   ];
 
   const technicalSkills = {
