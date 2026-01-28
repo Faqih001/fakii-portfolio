@@ -276,9 +276,9 @@ Answer questions professionally and accurately based on this context. If asked a
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-end sm:p-4 p-0 pointer-events-none">
-      <Card className="w-full sm:max-w-md sm:h-[600px] h-full sm:rounded-2xl rounded-none flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up">
+      <Card className="w-full sm:max-w-md sm:h-[600px] h-full rounded-2xl flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up">
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b bg-gradient-primary text-primary-foreground sm:rounded-t-2xl">
+        <div className="flex items-center justify-between p-4 border-b bg-gradient-primary text-primary-foreground rounded-t-2xl">
           <div className="flex items-center space-x-3">
             <div className="relative">
               <Bot className="w-8 h-8" />
@@ -361,7 +361,7 @@ Answer questions professionally and accurately based on this context. If asked a
         </ScrollArea>
 
         {/* Input */}
-        <div className="p-4 border-t bg-background">
+        <div className="p-4 border-t bg-background rounded-b-2xl">
           <div className="flex items-center gap-2">
             <input
               ref={inputRef}
