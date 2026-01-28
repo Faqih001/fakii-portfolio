@@ -128,24 +128,31 @@ const Home = () => {
                   Passionate About Building Digital Solutions That Matter
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  As a dedicated full-stack developer and AI enthusiast based in Nakuru, Kenya, I specialize in creating innovative digital solutions that drive real-world impact. My expertise spans across FinTech applications, healthcare IT systems, and cutting-edge AI implementations.
+                  As a motivated technology professional with 4+ years of hands-on experience in software development, 
+                  systems analysis, data workflows, and emerging technologies, I specialize in creating innovative digital 
+                  solutions that drive real-world impact. My expertise spans full-stack development, AI tools, automation, 
+                  and smart digital solutions across FinTech, healthcare IT systems, and social impact initiatives.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-foreground">Current Focus</h3>
+                <h3 className="text-xl font-semibold text-foreground">Experience Highlights</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                    <span>Leading digital health ecosystem projects with USAID, transforming healthcare delivery through technology</span>
+                    <span>Leading digital transformation initiatives with UN-HABITAT, USAID, and Argon Finance across Kenya and Uganda</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                    <span>Developing AI-driven solutions for vaccine demand forecasting and healthcare optimization</span>
+                    <span>Deployed national health information systems (KHIS/DHIS2, OpenMRS, eCHIS, iHRIS) supporting healthcare delivery</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                    <span>Building secure FinTech applications that enhance financial inclusion in Kenya</span>
+                    <span>Developed AliXe FinTech/Agri-trading platform recognized with Best FinTech Innovation Award</span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                    <span>Expertise in AI-driven solutions, workflow automation, and user-centered design for social impact</span>
                   </li>
                 </ul>
               </div>
@@ -164,13 +171,13 @@ const Home = () => {
               <div className="space-y-6">
                 <Card className="p-6 shadow-card hover:shadow-elegant transition-all duration-300">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl font-bold text-primary">3+</div>
+                    <div className="text-3xl font-bold text-primary">4+</div>
                     <div className="text-sm text-muted-foreground">Years Experience</div>
                   </div>
                 </Card>
                 <Card className="p-6 shadow-card hover:shadow-elegant transition-all duration-300">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl font-bold text-primary">15+</div>
+                    <div className="text-3xl font-bold text-primary">20+</div>
                     <div className="text-sm text-muted-foreground">Projects Completed</div>
                   </div>
                 </Card>
@@ -178,14 +185,14 @@ const Home = () => {
               <div className="space-y-6 sm:mt-12">
                 <Card className="p-6 shadow-card hover:shadow-elegant transition-all duration-300">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl font-bold text-primary">5+</div>
-                    <div className="text-sm text-muted-foreground">Tech Stacks</div>
+                    <div className="text-3xl font-bold text-primary">10+</div>
+                    <div className="text-sm text-muted-foreground">Certifications</div>
                   </div>
                 </Card>
                 <Card className="p-6 shadow-card hover:shadow-elegant transition-all duration-300">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl font-bold text-primary">2</div>
-                    <div className="text-sm text-muted-foreground">Innovation Awards</div>
+                    <div className="text-3xl font-bold text-primary">7</div>
+                    <div className="text-sm text-muted-foreground">Organizations Served</div>
                   </div>
                 </Card>
               </div>
