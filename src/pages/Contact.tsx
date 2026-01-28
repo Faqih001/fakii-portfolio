@@ -69,7 +69,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Location",
-      value: "Nakuru, Kenya",
+      value: "Nairobi, Kenya",
       href: "#",
       color: "from-purple-500 to-pink-600"
     },
