@@ -34,24 +34,24 @@ const Home = () => {
 
   const featuredProjects = [
     {
-      title: "AliXe FinTech Application",
-      description: "Award-winning FinTech network application built with MERN stack featuring secure transactions and real-time analytics.",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      award: "Best FinTech Innovation",
-      link: "/projects"
-    },
-    {
-      title: "KenyaEMR Integration",
-      description: "Led deployment and integration of KenyaEMR for hospital systems in the USAID Digital Health Ecosystem Project.",
-      technologies: ["APIs", "Web Services", "Jira", "Healthcare IT"],
+      title: "MamaShub - Maternal Health Platform",
+      description: "Maternal and child health platform built on Google Open Health Stack to digitize the Mother-Child Booklet (MOH 216), supporting ANC/PNC data capture and continuity of care.",
+      technologies: ["React", "OpenMRS", "FHIR", "Healthcare IT"],
       award: "Healthcare Impact",
       link: "/projects"
     },
     {
-      title: "Guriflex Real Estate Platform",
-      description: "Modern, responsive real estate website with property search, user dashboards, and secure payment integration.",
-      technologies: ["Next.js", "Tailwind CSS", "MongoDB Atlas", "IntaSend"],
-      award: "Client Excellence",
+      title: "AliXe FinTech Application",
+      description: "Award-winning FinTech/Agri-trading platform with user-centered workflows, secure transactions, and real-time data capture for financial inclusion.",
+      technologies: ["React", "Node.js", "MongoDB", "FinTech"],
+      award: "Best FinTech Innovation",
+      link: "/projects"
+    },
+    {
+      title: "National Health Systems Integration",
+      description: "Integrated KHIS/DHIS2, OpenMRS, eCHIS, and iHRIS for national health information systems supporting data management and interoperability.",
+      technologies: ["DHIS2", "OpenMRS", "APIs", "System Integration"],
+      award: "Digital Transformation",
       link: "/projects"
     }
   ];
