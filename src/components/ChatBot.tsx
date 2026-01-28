@@ -32,7 +32,7 @@ You are an AI assistant for Fakii Mohammed's professional portfolio. Answer ques
 
 ABOUT FAKII MOHAMMED:
 - Software/Full-stack Engineer with 4+ years of hands-on experience
-- Based in Kenya, Nairobi
+ - Based in Nairobi, Kenya
 - Phone: +254 741140250
 - Email: fakiiahmad001@gmail.com
 - GitHub: https://github.com/Faqih001

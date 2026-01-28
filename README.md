@@ -26,7 +26,7 @@ I thrive in **globally distributed teams**, contributing to **open-source projec
 - **Email**: fakiiahmad001@gmail.com
 - **GitHub**: [https://github.com/Faqih001](https://github.com/Faqih001)
 - **LinkedIn**: [https://www.linkedin.com/in/fakii-mohammed-a96a84213/](https://www.linkedin.com/in/fakii-mohammed-a96a84213/)
-- **Location**: Kenya, Nairobi
+- **Location**: Nairobi, Kenya
 
 ---
 
