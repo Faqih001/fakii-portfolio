@@ -203,8 +203,20 @@ Answer questions professionally and accurately based on this context. If asked a
       sendMessage();
     }
   };
-const handleQuickPrompt = (promptText: string) => {
+
+  const handleQuickPrompt = (promptText: string) => {
     sendMessage(promptText);
+  };
+
+  const formatInlineText = (text: string) => {
+    // Handle bold text **text**
+    const parts = text.split(/(\*\*[^*]+\*\*)/g);
+    return parts.map((part, i) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={i} className="font-semibold">{part.slice(2, -2)}</strong>;
+      }
+      return <span key={i}>{part}</span>;
+    });
   };
 
   const formatMessage = (text: string) => {
@@ -242,7 +254,63 @@ const handleQuickPrompt = (promptText: string) => {
             {content}
           </div>
         );
-      }3 ${
+      }
+      // Regular text
+      else if (line.trim()) {
+        formattedLines.push(
+          <div key={index} className="my-1">
+            {formatInlineText(line)}
+          </div>
+        );
+      }
+      // Empty line
+      else {
+        formattedLines.push(<div key={index} className="h-2" />);
+      }
+    });
+
+    return <div>{formattedLines}</div>;
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end justify-end sm:p-4 p-0 pointer-events-none">
+      <Card className="w-full sm:max-w-md sm:h-[600px] h-full sm:rounded-2xl rounded-none flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up">
+        {/* Header */}
+        <div className="flex items-center justify-between p-4 border-b bg-gradient-primary text-primary-foreground sm:rounded-t-2xl">
+          <div className="flex items-center space-x-3">
+            <div className="relative">
+              <Bot className="w-8 h-8" />
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-white animate-pulse" />
+            </div>
+            <div>
+              <h3 className="font-semibold">Fakii's AI Assistant</h3>
+              <p className="text-xs opacity-90">Powered by Gemini AI</p>
+            </div>
+          </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={onClose}
+            className="text-primary-foreground hover:bg-white/20"
+          >
+            <X className="w-5 h-5" />
+          </Button>
+        </div>
+
+        {/* Messages */}
+        <ScrollArea className="flex-1 p-4" ref={scrollRef}>
+          <div className="space-y-4">
+            {messages.map((message, index) => (
+              <div
+                key={index}
+                className={`flex ${
+                  message.role === "user" ? "justify-end" : "justify-start"
+                }`}
+              >
+                <div
+                  className={`max-w-[85%] rounded-2xl px-4 py-3 ${
                     message.role === "user"
                       ? "bg-primary text-primary-foreground"
                       : "bg-muted"
@@ -286,74 +354,6 @@ const handleQuickPrompt = (promptText: string) => {
                       <span className="text-xs flex-1">{prompt.text}</span>
                     </Button>
                   ))}
-    return parts.map((part, i) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
-        return <strong key={i} className="font-semibold">{part.slice(2, -2)}</strong>;
-      }
-      return <span key={i}>{part}</span>;
-    });
-  };
-
-  
-  if (!isOpen) return null;
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-end justify-end sm:p-4 p-0 pointer-events-none">
-      <Card className="w-full sm:max-w-md sm:h-[600px] h-full sm:rounded-2xl rounded-none flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up">
-        {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b bg-gradient-primary text-primary-foreground sm:rounded-t-2xl">
-          <div className="flex items-center space-x-3">
-            <div className="relative">
-              <Bot className="w-8 h-8" />
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-white animate-pulse" />
-            </div>
-            <div>
-              <h3 className="font-semibold">Fakii's AI Assistant</h3>
-              <p className="text-xs opacity-90">Powered by Gemini AI</p>
-            </div>
-          </div>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={onClose}
-            className="text-primary-foreground hover:bg-white/20"
-          >
-            <X className="w-5 h-5" />
-          </Button>
-        </div>
-
-        {/* Messages */}
-        <ScrollArea className="flex-1 p-4" ref={scrollRef}>
-          <div className="space-y-4">
-            {messages.map((message, index) => (
-              <div
-                key={index}
-                className={`flex ${
-                  message.role === "user" ? "justify-end" : "justify-start"
-                }`}
-              >
-                <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-2 ${
-                    message.role === "user"
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted"
-                  }`}
-                >
-                  {message.role === "assistant" && message.thinking && (
-                    <div className="mb-2 text-xs opacity-70 italic flex items-center gap-1">
-                      <Sparkles className="w-3 h-3" />
-                      <span>Thinking process applied</span>
-                    </div>
-                  )}
-                  <p className="text-sm whitespace-pre-wrap">{message.content}</p>
-                </div>
-              </div>
-            ))}
-            {isLoading && (
-              <div className="flex justify-start">
-                <div className="bg-muted rounded-2xl px-4 py-2 flex items-center gap-2">
-                  <Loader2 className="w-4 h-4 animate-spin" />
-                  <span className="text-sm">Thinking...</span>
                 </div>
               </div>
             )}
@@ -374,7 +374,7 @@ const handleQuickPrompt = (promptText: string) => {
               disabled={isLoading}
             />
             <Button
-              onClick={sendMessage}
+              onClick={() => sendMessage()}
               disabled={!input.trim() || isLoading}
               size="sm"
               className="rounded-full sm:w-10 sm:h-10 w-12 h-12 p-0 flex-shrink-0"
