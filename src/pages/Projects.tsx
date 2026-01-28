@@ -8,15 +8,33 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "AliXe FinTech Application",
-      description: "A comprehensive FinTech network application that won the Best FinTech Innovation award. Built with the MERN stack, featuring secure transactions, user authentication, and real-time analytics.",
+      title: "MamaShub - Maternal Health Platform (MOH 216)",
+      description: "Maternal and child health platform built on Google Open Health Stack to digitize the Mother-Child Booklet (MOH 216), supporting ANC/PNC data capture, reporting, and continuity of care.",
+      technologies: ["React", "OpenMRS", "FHIR", "Node.js", "Healthcare IT"],
+      features: [
+        "Digital Mother-Child Booklet",
+        "ANC/PNC data capture",
+        "Patient record management",
+        "Reporting and analytics",
+        "Continuity of care tracking",
+        "FHIR standards compliance"
+      ],
+      category: "Healthcare",
+      github: "https://github.com/Faqih001/mamashub-web",
+      icon: <Shield className="w-6 h-6" />,
+      color: "from-pink-500 to-rose-600"
+    },
+    {
+      id: 2,
+      title: "AliXe FinTech/Agri-Trading Application",
+      description: "Award-winning FinTech/Agri-trading platform with user-centered workflows, secure transactions, and real-time data capture for financial inclusion.",
       technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "WebSocket"],
       features: [
         "User authentication & authorization",
         "Secure financial transactions",
         "Real-time analytics dashboard",
         "Payment gateway integration",
-        "Transaction history tracking",
+        "Agri-trading marketplace",
         "Mobile-responsive design"
       ],
       award: "Best FinTech Innovation Award",
@@ -25,10 +43,10 @@ const Projects = () => {
       color: "from-green-500 to-emerald-600"
     },
     {
-      id: 2,
-      title: "KenyaEMR Deployment",
-      description: "Led the integration and deployment of KenyaEMR for hospital systems as part of the USAID Digital Health Ecosystem Project, ensuring secure data exchange and system interoperability.",
-      technologies: ["APIs", "Web Services", "Jira", "Python", "SQL", "Docker"],
+      id: 3,
+      title: "KenyaEMR / OpenMRS 3.x (O3)",
+      description: "Contributions to KenyaEMR/OpenMRS supporting national health information systems, interoperability, testing, and deployments across healthcare facilities.",
+      technologies: ["OpenMRS", "React", "APIs", "Web Services", "Jira", "Docker"],
       features: [
         "Hospital system integration",
         "Secure data exchange protocols",
@@ -38,30 +56,320 @@ const Projects = () => {
         "Bug tracking and resolution"
       ],
       category: "Healthcare",
+      liveUrl: "https://uat.kenyahmis.org/openmrs/spa/login",
       icon: <Shield className="w-6 h-6" />,
       color: "from-blue-500 to-cyan-600"
     },
     {
-      id: 3,
-      title: "Guriflex Real Estate Website",
-      description: "A modern, responsive real estate platform developed for Guriflex, featuring property search capabilities, user/admin dashboards, and secure payment integration.",
+      id: 4,
+      title: "eCHIS - Community Health Information System",
+      description: "Community health data integration project supporting frontline health workers and national reporting with real-time data capture.",
+      technologies: ["React", "Node.js", "DHIS2", "APIs", "Mobile Integration"],
+      features: [
+        "Community health worker support",
+        "Real-time data capture",
+        "National reporting integration",
+        "Mobile-first design",
+        "Offline functionality",
+        "Data synchronization"
+      ],
+      category: "Healthcare",
+      github: "https://github.com/Faqih001/echis-2.0-integration",
+      icon: <Shield className="w-6 h-6" />,
+      color: "from-teal-500 to-cyan-600"
+    },
+    {
+      id: 5,
+      title: "iHRIS Kenya",
+      description: "Human Resource Information System for health workforce management, deployment tracking, and reporting across healthcare facilities.",
+      technologies: ["Vue.js", "Node.js", "FHIR", "MongoDB", "APIs"],
+      features: [
+        "Health workforce management",
+        "Deployment tracking",
+        "Training management",
+        "Performance reporting",
+        "Certificate management",
+        "FHIR integration"
+      ],
+      category: "Healthcare",
+      liveUrl: "https://v5-demo.ihris.org/",
+      github: "https://github.com/Faqih001/iHRIS-Kenya",
+      icon: <Shield className="w-6 h-6" />,
+      color: "from-indigo-500 to-purple-600"
+    },
+    {
+      id: 6,
+      title: "DamuKE - National Blood Management",
+      description: "National blood donation and transfusion management platform supporting donor-to-recipient workflows and inventory tracking.",
+      technologies: ["React", "Laravel", "MySQL", "SMS Integration"],
+      features: [
+        "Donor registration & management",
+        "Blood inventory tracking",
+        "Transfusion workflow",
+        "SMS notifications",
+        "Hospital integration",
+        "Reporting dashboard"
+      ],
+      category: "Healthcare",
+      liveUrl: "https://damuke.health.go.ke/",
+      icon: <Shield className="w-6 h-6" />,
+      color: "from-red-500 to-pink-600"
+    },
+    {
+      id: 7,
+      title: "Agri-Senti WebApp",
+      description: "Agri-tech platform connecting farmers with buyers to optimize supply chains, pricing transparency, and market access.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Maps API"],
+      features: [
+        "Farmer-buyer marketplace",
+        "Real-time pricing",
+        "Supply chain optimization",
+        "Market analytics",
+        "Geo-location services",
+        "Mobile responsive"
+      ],
+      category: "AgriTech",
+      liveUrl: "https://nakuru-agri-senti-webapp.vercel.app/landing",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-green-600 to-lime-600"
+    },
+    {
+      id: 8,
+      title: "Project Management System (PMS)",
+      description: "Enterprise-grade workflow and collaboration platform with task dashboards, role-based access control, audit logs, and reporting.",
+      technologies: ["React", "Node.js", "PostgreSQL", "TypeScript", "WebSocket"],
+      features: [
+        "Task management dashboard",
+        "Role-based access control",
+        "Audit logs & tracking",
+        "Real-time collaboration",
+        "Reporting & analytics",
+        "Project timeline views"
+      ],
+      category: "Enterprise",
+      liveUrl: "https://argon-pms.vercel.app/",
+      icon: <Database className="w-6 h-6" />,
+      color: "from-blue-600 to-indigo-600"
+    },
+    {
+      id: 9,
+      title: "Jira Vision Dashboard",
+      description: "Real-time task and workflow management dashboard with analytics, performance metrics, and data visualization.",
+      technologies: ["React", "Next.js", "Tailwind CSS", "Jira API", "Charts.js"],
+      features: [
+        "Real-time task tracking",
+        "Performance metrics",
+        "Data visualization",
+        "Sprint analytics",
+        "Team collaboration",
+        "Custom reporting"
+      ],
+      category: "Enterprise",
+      liveUrl: "https://v0-jiravision-dashboard.vercel.app/",
+      icon: <Database className="w-6 h-6" />,
+      color: "from-purple-600 to-pink-600"
+    },
+    {
+      id: 10,
+      title: "Medicare254",
+      description: "Digital healthcare platform for secure patient record management with role-based access control and compliance-ready workflows.",
+      technologies: ["React", "Node.js", "MongoDB", "JWT", "HIPAA Compliance"],
+      features: [
+        "Patient record management",
+        "Role-based access control",
+        "Appointment scheduling",
+        "Prescription management",
+        "Billing integration",
+        "HIPAA compliance"
+      ],
+      category: "Healthcare",
+      liveUrl: "https://medicare254.vercel.app/",
+      icon: <Shield className="w-6 h-6" />,
+      color: "from-blue-500 to-teal-600"
+    },
+    {
+      id: 11,
+      title: "Ovarian Cyst ML Diagnostic API",
+      description: "Machine learning–powered health diagnostics solution with data preprocessing, inference pipelines, and result visualization.",
+      technologies: ["Python", "TensorFlow", "Streamlit", "Scikit-learn", "Pandas"],
+      features: [
+        "ML-powered diagnostics",
+        "Data preprocessing",
+        "Inference pipelines",
+        "Result visualization",
+        "Interactive UI",
+        "Model evaluation"
+      ],
+      category: "AI/ML",
+      liveUrl: "https://ovarian-cyst-ml-api.streamlit.app/",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-purple-500 to-pink-500"
+    },
+    {
+      id: 12,
+      title: "Mental Health Portal – Kenya",
+      description: "Public digital platform providing mental health information, resources, and access to services for Kenyan citizens.",
+      technologies: ["React", "Laravel", "MySQL", "CMS Integration"],
+      features: [
+        "Mental health resources",
+        "Service directory",
+        "Crisis helpline",
+        "Information articles",
+        "Professional directory",
+        "Appointment booking"
+      ],
+      category: "Healthcare",
+      liveUrl: "https://mental.health.go.ke/",
+      icon: <Shield className="w-6 h-6" />,
+      color: "from-indigo-500 to-blue-600"
+    },
+    {
+      id: 13,
+      title: "RUSH (Akvo RTMIS)",
+      description: "Real-time monitoring information system for water, sanitation, hygiene, and public infrastructure projects.",
+      technologies: ["React", "Python", "PostgreSQL", "Django", "Maps API"],
+      features: [
+        "Real-time monitoring",
+        "Infrastructure tracking",
+        "Data collection",
+        "Geographic visualization",
+        "Reporting dashboard",
+        "Mobile data capture"
+      ],
+      category: "Public Sector",
+      liveUrl: "https://rtmis.akvo.org/",
+      icon: <Database className="w-6 h-6" />,
+      color: "from-cyan-500 to-blue-600"
+    },
+    {
+      id: 14,
+      title: "Web Capture Tool (PWA)",
+      description: "Offline-friendly progressive web app for structured data capture in field operations with sync capabilities.",
+      technologies: ["React", "PWA", "IndexedDB", "Service Workers", "Sync API"],
+      features: [
+        "Offline data capture",
+        "Progressive web app",
+        "Data synchronization",
+        "Form validation",
+        "Photo capture",
+        "GPS tagging"
+      ],
+      category: "Tools",
+      liveUrl: "https://structure-web-capture-tool.vercel.app/",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-orange-500 to-red-600"
+    },
+    {
+      id: 15,
+      title: "Parent Assignment Helper",
+      description: "Education support platform for parents and learners with assignment tracking and progress monitoring.",
+      technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
+      features: [
+        "Assignment tracking",
+        "Progress monitoring",
+        "Parent dashboard",
+        "Student profiles",
+        "Deadline reminders",
+        "Performance reports"
+      ],
+      category: "Education",
+      liveUrl: "https://parent-assignment-helper.vercel.app/",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-yellow-500 to-orange-600"
+    },
+    {
+      id: 16,
+      title: "AmiTech Donation Platform",
+      description: "Secure donation platform with real-time Mpesa payments, transaction validation, and donor tracking.",
+      technologies: ["React", "Node.js", "Mpesa API", "MongoDB", "Express"],
+      features: [
+        "Mpesa integration",
+        "Real-time payments",
+        "Transaction validation",
+        "Donor tracking",
+        "Receipt generation",
+        "Admin dashboard"
+      ],
+      category: "FinTech",
+      liveUrl: "https://amitech-donations.onrender.com/",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-green-500 to-teal-600"
+    },
+    {
+      id: 17,
+      title: "CryptoBuddy – Analytics Platform",
+      description: "Cryptocurrency analytics and portfolio tracking system with dashboards and data aggregation from multiple exchanges.",
+      technologies: ["Python", "Streamlit", "Pandas", "APIs", "Charts"],
+      features: [
+        "Portfolio tracking",
+        "Price analytics",
+        "Market trends",
+        "Exchange integration",
+        "Real-time updates",
+        "Performance charts"
+      ],
+      category: "FinTech",
+      liveUrl: "https://cryptobuddy254.streamlit.app/",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-yellow-500 to-orange-500"
+    },
+    {
+      id: 18,
+      title: "Guriflex – Real Estate Marketplace",
+      description: "Real estate marketplace for buying, renting, and selling properties in Kenya with verified listings and secure payments.",
       technologies: ["Next.js", "Tailwind CSS", "MongoDB Atlas", "IntaSend", "TypeScript"],
       features: [
-        "Advanced property search",
-        "User dashboard & profiles",
+        "Property listings",
+        "Advanced search filters",
+        "User dashboard",
         "Admin management panel",
         "Secure payment integration",
-        "Property listing management",
-        "Mobile-first responsive design"
+        "Property verification"
       ],
       category: "Real Estate",
-      duration: "June - August 2025",
+      liveUrl: "https://guriflex.co.ke/",
       icon: <Database className="w-6 h-6" />,
       color: "from-purple-500 to-pink-600"
+    },
+    {
+      id: 19,
+      title: "Cardiff Global Limited (CGL)",
+      description: "Corporate website supporting logistics, security, and infrastructure services across East & Central Africa.",
+      technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+      features: [
+        "Service showcase",
+        "Project portfolio",
+        "Contact forms",
+        "Company information",
+        "Client testimonials",
+        "Responsive design"
+      ],
+      category: "Corporate",
+      liveUrl: "https://www.cgl-support.com/",
+      icon: <Database className="w-6 h-6" />,
+      color: "from-gray-700 to-gray-900"
+    },
+    {
+      id: 20,
+      title: "Kulthum Limited",
+      description: "Corporate platform and dashboards for diversified operations including construction, catering, and waste management.",
+      technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      features: [
+        "Service management",
+        "Operations dashboard",
+        "Client portal",
+        "Project tracking",
+        "Reporting system",
+        "Multi-service platform"
+      ],
+      category: "Corporate",
+      liveUrl: "https://www.kulthumlimited.co.ke/",
+      icon: <Database className="w-6 h-6" />,
+      color: "from-blue-700 to-indigo-800"
     }
   ];
 
-  const categories = ["All", "FinTech", "Healthcare", "Real Estate"];
+  const categories = ["All", "Healthcare", "FinTech", "AgriTech", "Enterprise", "AI/ML", "Public Sector", "Education", "Tools", "Real Estate", "Corporate"];
 
   // State for selected category
   const [selectedCategory, setSelectedCategory] = React.useState<string>("All");
