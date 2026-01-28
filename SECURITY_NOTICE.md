@@ -8,7 +8,7 @@ GitHub has detected that your Gemini API key was committed to the repository. **
 
 ### 1. **Revoke the Exposed API Key** (DO THIS FIRST!)
    - Go to [Google AI Studio API Keys](https://aistudio.google.com/apikey)
-   - Find and delete the exposed key: `AIzaSyCFw_dSFApHwpyB0FvDNkagOFehESo0QKk`
+   - Find and delete the exposed key shown in your repository history (do not leave literal keys in docs). Rotate the key immediately.
    - This will immediately prevent anyone from using it
 
 ### 2. **Create a New API Key**
