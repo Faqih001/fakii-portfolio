@@ -32,7 +32,7 @@ const Footer = () => {
                 <span>+254 741 140 250</span>
               </div>
               <div className="text-sm text-muted-foreground">
-                Nakuru, Kenya
+                Nairobi, Kenya
               </div>
             </div>
           </div>
