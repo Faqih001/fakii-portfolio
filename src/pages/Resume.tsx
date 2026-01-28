@@ -7,35 +7,116 @@ import { Separator } from "@/components/ui/separator";
 const Resume = () => {
   const workExperience = [
     {
-      title: "IT Support & Systems Analyst",
-      company: "USAID Digital Health Ecosystem Project",
-      location: "Nakuru, Kenya",
-      duration: "Feb 2024 – Jan 2025",
-      type: "Contract",
+      title: "Full Stack Developer/Data Analyst",
+      company: "Freelance - Remote",
+      location: "Kenya",
+      duration: "October 2025 - Present",
+      type: "Remote",
       responsibilities: [
-        "Developed comprehensive Standard Operating Procedures (SOPs) for healthcare IT systems",
-        "Led deployment and integration of KenyaEMR across multiple hospital systems",
-        "Managed network configurations and ensured secure data exchange protocols",
-        "Conducted system training for healthcare professionals and IT staff",
-        "Implemented API validation processes for healthcare data interoperability",
-        "Collaborated with international teams to enhance digital health infrastructure"
+        "Design and improve digital systems for project management, data tracking, and workflow automation using AI tools",
+        "Collaborate with teams to identify challenges and translate needs into practical solutions",
+        "Analyze and organize data to generate actionable insights and track key outcomes",
+        "Build accessible dashboards and interfaces that make information easy to understand",
+        "Create user guides, SOPs, and training materials ensuring reliable, user-friendly solutions",
+        "Optimize processes for efficiency and usability through testing and feedback"
       ],
-      technologies: ["KenyaEMR", "APIs", "Web Services", "Jira", "Network Security", "Healthcare IT"]
+      technologies: ["AI Tools", "Google Workspace", "React", "Node.js", "Python", "Data Analytics", "Dashboard Development"]
     },
     {
-      title: "IT Technician",
-      company: "MOWASSCO (Molo Water and Sanitation Company)",
-      location: "Molo, Kenya",
-      duration: "2022 – 2024",
-      type: "Full-time",
+      title: "Communication/Full Stack Developer",
+      company: "UN-HABITAT - PLGS",
+      location: "Kenya",
+      duration: "July 2025 - October 2025",
+      type: "Remote",
       responsibilities: [
-        "Maintained and optimized IT infrastructure for water management systems",
-        "Provided technical support for SCADA and water monitoring systems",
-        "Implemented cybersecurity measures to protect critical infrastructure",
-        "Developed automated reporting systems for water quality monitoring",
-        "Trained staff on new technologies and security protocols"
+        "Assessed and improved digital systems for data management, tracking, and reporting",
+        "Worked remotely with international, cross-functional teams to identify operational challenges",
+        "Translated operational challenges into practical, technology-driven workflow improvements",
+        "Analyzed program data to generate actionable insights and optimize processes",
+        "Developed user guides, SOPs, and release notes for system adoption",
+        "Collaborated in meetings to provide feedback and support inclusive, participatory project outcomes"
       ],
-      technologies: ["SCADA Systems", "Network Management", "Cybersecurity", "Database Management"]
+      technologies: ["Digital Systems", "Data Management", "Workflow Automation", "Cross-functional Collaboration", "Documentation"]
+    },
+    {
+      title: "Full Stack Developer/IT Support",
+      company: "Argon Finance (Fintech for Financial Inclusion) – Remote",
+      location: "Uganda",
+      duration: "February 2025 – June 2025",
+      type: "Remote",
+      responsibilities: [
+        "Evaluated and improved digital systems for onboarding, contracting, time-tracking, and data management",
+        "Researched and implemented AI and automation solutions to streamline workflows",
+        "Collaborated with product owners, backend teams, and stakeholders to translate requirements",
+        "Built accessible dashboards and interfaces to provide clear insights and enhance KPI tracking",
+        "Developed user guides and training materials to support adoption and sustainable use",
+        "Enhanced operations efficiency for underserved users in financial inclusion programs"
+      ],
+      technologies: ["FinTech", "AI", "Automation", "Dashboard Development", "React", "Node.js", "API Integration"]
+    },
+    {
+      title: "Systems Developer/IT Support",
+      company: "USAID (Digital Health Ecosystem) – Remote/Hybrid",
+      location: "Kenya",
+      duration: "February 2024 – January 2025",
+      type: "Remote/Hybrid",
+      responsibilities: [
+        "Assessed national health information systems (KHIS/DHIS2, OpenMRS, eCHIS, iHRIS) to enhance data management",
+        "Improved system interoperability and workflow efficiency across health platforms",
+        "Worked with global, cross-functional teams to identify challenges and support KPI tracking",
+        "Compiled and analyzed program data, validated APIs, and ensured seamless system integration",
+        "Produced user guides, SOPs, and training materials for sustainable adoption",
+        "Enabled efficient onboarding and reliable use of community-focused health platforms"
+      ],
+      technologies: ["KHIS/DHIS2", "OpenMRS", "eCHIS", "iHRIS", "Healthcare IT", "API Validation", "System Integration"]
+    },
+    {
+      title: "Innovator/Full Stack Developer",
+      company: "CRIW (Central Rift Innovation Week) – Kenya",
+      location: "Kenya",
+      duration: "September 2023 – November 2023",
+      type: "Contract",
+      responsibilities: [
+        "Led development of the AliXe fintech/agri-trading platform with user-centered workflows",
+        "Collaborated with SMEs, traders, and stakeholders to gather feedback and iterate solutions",
+        "Implemented strong data capture and reporting functionalities",
+        "Conducted usability and regression testing to ensure quality",
+        "Created guides and training materials to support adoption and minimize post-deployment issues",
+        "Focused on innovative, practical solutions improving user experience and system efficiency"
+      ],
+      technologies: ["FinTech", "Agri-Tech", "React", "Node.js", "MongoDB", "User-Centered Design"]
+    },
+    {
+      title: "Full Stack Developer / Data Analyst",
+      company: "Freelance – Remote",
+      location: "Remote",
+      duration: "January 2022 – August 2023",
+      type: "Remote",
+      responsibilities: [
+        "Supported clients in health, education, agri-tech, and public-sector projects",
+        "Evaluated digital systems and implemented automated workflows using AI and emerging tools",
+        "Collaborated with international teams to gather requirements and analyze program data",
+        "Generated insights for KPI tracking and impact measurement",
+        "Built accessible dashboards and reporting interfaces for social impact initiatives",
+        "Developed user guides, SOPs, and training materials ensuring sustainable use"
+      ],
+      technologies: ["AI Tools", "React", "Node.js", "Python", "Data Analytics", "Dashboard Development", "Automation"]
+    },
+    {
+      title: "IT Support / Systems Engineer",
+      company: "Mombasa Water Supply & Sanitation Company – Kenya",
+      location: "Kenya",
+      duration: "September 2021 – November 2021",
+      type: "On-site",
+      responsibilities: [
+        "Provided IT support by assessing hardware, software, and data systems",
+        "Performed audits and created SOPs to improve efficiency and knowledge sharing",
+        "Collaborated with teams to gather requirements and troubleshoot technical issues",
+        "Supported system rollouts while ensuring data integrity",
+        "Developed foundational skills in digital system assessment and documentation",
+        "Contributed to practical, user-centered improvements in public service environment"
+      ],
+      technologies: ["IT Support", "System Administration", "SOPs", "Hardware/Software", "Public Sector Systems"]
     }
   ];
 
