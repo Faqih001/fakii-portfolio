@@ -77,11 +77,11 @@ const Home = () => {
                 </h1>
                 
                 <p className="text-xl md:text-2xl text-background/80 font-light max-w-2xl">
-                  Innovative Full-Stack Developer & AI Enthusiast Driving Digital Transformation
+                  Software/Full-Stack Engineer Driving Digital Transformation Through Innovation
                 </p>
                 
                 <p className="text-lg text-background/70 max-w-2xl">
-                  Based in Nakuru, Kenya • Specializing in FinTech, Healthcare IT, and AI Solutions
+                  Based in Kenya | 4+ years experience in FinTech, Healthcare IT, AI Solutions & Digital Systems
                 </p>
               </div>
 
