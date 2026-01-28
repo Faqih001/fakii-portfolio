@@ -214,7 +214,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {skills.map((skill, index) => (
               <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
                 <CardHeader className="text-center pb-4">
@@ -231,6 +231,98 @@ const Home = () => {
               </Card>
             ))}
           </div>
+
+          {/* Technologies & Tools Grid */}
+          <Card className="p-8 shadow-elegant">
+            <div className="space-y-6">
+              <div className="text-center space-y-2">
+                <h3 className="text-2xl font-bold text-foreground">🔧 Technologies & Tools</h3>
+                <p className="text-muted-foreground">My comprehensive tech stack</p>
+              </div>
+              <div className="flex flex-wrap gap-3 justify-center">
+                {/* Operating Systems */}
+                <img src="https://img.shields.io/badge/OS-Windows-informational?style=flat&logo=windows&logoColor=white&color=2bbc8a" alt="Windows" className="h-7" />
+                <img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a" alt="Linux" className="h-7" />
+                <img src="https://img.shields.io/badge/OS-Ubuntu-informational?style=flat&logo=ubuntu&logoColor=white&color=2bbc8a" alt="Ubuntu" className="h-7" />
+
+                {/* Editors */}
+                <img src="https://img.shields.io/badge/Editor-Visual_Studio_Code-informational?style=flat&logo=visualstudiocode&logoColor=white&color=2bbc8a" alt="VS Code" className="h-7" />
+                
+                {/* Languages */}
+                <img src="https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=javascript&logoColor=white&color=2bbc8a" alt="JavaScript" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-TypeScript-informational?style=flat&logo=typescript&logoColor=white&color=2bbc8a" alt="TypeScript" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=2bbc8a" alt="Python" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-PHP-informational?style=flat&logo=php&logoColor=white&color=2bbc8a" alt="PHP" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Dart-informational?style=flat&logo=dart&logoColor=white&color=2bbc8a" alt="Dart" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-HTML5-informational?style=flat&logo=html5&logoColor=white&color=2bbc8a" alt="HTML5" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-CSS3-informational?style=flat&logo=css3&logoColor=white&color=2bbc8a" alt="CSS3" className="h-7" />
+                
+                {/* Frontend Frameworks */}
+                <img src="https://img.shields.io/badge/Code-React-informational?style=flat&logo=react&logoColor=white&color=2bbc8a" alt="React" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Next.js-informational?style=flat&logo=nextdotjs&logoColor=white&color=2bbc8a" alt="Next.js" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Vue.js-informational?style=flat&logo=vuedotjs&logoColor=white&color=2bbc8a" alt="Vue.js" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Flutter-informational?style=flat&logo=flutter&logoColor=white&color=2bbc8a" alt="Flutter" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Tailwind_CSS-informational?style=flat&logo=tailwindcss&logoColor=white&color=2bbc8a" alt="Tailwind CSS" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Bootstrap-informational?style=flat&logo=bootstrap&logoColor=white&color=2bbc8a" alt="Bootstrap" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-SASS-informational?style=flat&logo=sass&logoColor=white&color=2bbc8a" alt="SASS" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Redux-informational?style=flat&logo=redux&logoColor=white&color=2bbc8a" alt="Redux" className="h-7" />
+                
+                {/* Backend Frameworks */}
+                <img src="https://img.shields.io/badge/Code-Node.js-informational?style=flat&logo=nodedotjs&logoColor=white&color=2bbc8a" alt="Node.js" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Express.js-informational?style=flat&logo=express&logoColor=white&color=2bbc8a" alt="Express.js" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Laravel-informational?style=flat&logo=laravel&logoColor=white&color=2bbc8a" alt="Laravel" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-FastAPI-informational?style=flat&logo=fastapi&logoColor=white&color=2bbc8a" alt="FastAPI" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-Django-informational?style=flat&logo=django&logoColor=white&color=2bbc8a" alt="Django" className="h-7" />
+                <img src="https://img.shields.io/badge/Code-GraphQL-informational?style=flat&logo=graphql&logoColor=white&color=2bbc8a" alt="GraphQL" className="h-7" />
+                
+                {/* Databases */}
+                <img src="https://img.shields.io/badge/Tools-PostgreSQL-informational?style=flat&logo=postgresql&logoColor=white&color=2bbc8a" alt="PostgreSQL" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-MySQL-informational?style=flat&logo=mysql&logoColor=white&color=2bbc8a" alt="MySQL" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-MongoDB-informational?style=flat&logo=mongodb&logoColor=white&color=2bbc8a" alt="MongoDB" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Supabase-informational?style=flat&logo=supabase&logoColor=white&color=2bbc8a" alt="Supabase" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-SQLite-informational?style=flat&logo=sqlite&logoColor=white&color=2bbc8a" alt="SQLite" className="h-7" />
+                
+                {/* Cloud & DevOps */}
+                <img src="https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazonaws&logoColor=white&color=2bbc8a" alt="AWS" className="h-7" />
+                <img src="https://img.shields.io/badge/Cloud-Firebase-informational?style=flat&logo=firebase&logoColor=white&color=2bbc8a" alt="Firebase" className="h-7" />
+                <img src="https://img.shields.io/badge/Cloud-Vercel-informational?style=flat&logo=vercel&logoColor=white&color=2bbc8a" alt="Vercel" className="h-7" />
+                <img src="https://img.shields.io/badge/Cloud-DigitalOcean-informational?style=flat&logo=digitalocean&logoColor=white&color=2bbc8a" alt="DigitalOcean" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=2bbc8a" alt="Docker" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Git-informational?style=flat&logo=git&logoColor=white&color=2bbc8a" alt="Git" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-GitHub-informational?style=flat&logo=github&logoColor=white&color=2bbc8a" alt="GitHub" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-GitHub_Actions-informational?style=flat&logo=githubactions&logoColor=white&color=2bbc8a" alt="GitHub Actions" className="h-7" />
+                
+                {/* AI & ML */}
+                <img src="https://img.shields.io/badge/AI-TensorFlow-informational?style=flat&logo=tensorflow&logoColor=white&color=2bbc8a" alt="TensorFlow" className="h-7" />
+                <img src="https://img.shields.io/badge/AI-PyTorch-informational?style=flat&logo=pytorch&logoColor=white&color=2bbc8a" alt="PyTorch" className="h-7" />
+                <img src="https://img.shields.io/badge/AI-Scikit_Learn-informational?style=flat&logo=scikitlearn&logoColor=white&color=2bbc8a" alt="Scikit-Learn" className="h-7" />
+                
+                {/* Design & Analytics */}
+                <img src="https://img.shields.io/badge/Tools-Figma-informational?style=flat&logo=figma&logoColor=white&color=2bbc8a" alt="Figma" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Adobe_XD-informational?style=flat&logo=adobexd&logoColor=white&color=2bbc8a" alt="Adobe XD" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Power_BI-informational?style=flat&logo=powerbi&logoColor=white&color=2bbc8a" alt="Power BI" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Tableau-informational?style=flat&logo=tableau&logoColor=white&color=2bbc8a" alt="Tableau" className="h-7" />
+                
+                {/* Testing */}
+                <img src="https://img.shields.io/badge/Tools-Jest-informational?style=flat&logo=jest&logoColor=white&color=2bbc8a" alt="Jest" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Cypress-informational?style=flat&logo=cypress&logoColor=white&color=2bbc8a" alt="Cypress" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Postman-informational?style=flat&logo=postman&logoColor=white&color=2bbc8a" alt="Postman" className="h-7" />
+                
+                {/* Shell */}
+                <img src="https://img.shields.io/badge/Shell-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=2bbc8a" alt="Bash" className="h-7" />
+                
+                {/* Healthcare IT */}
+                <img src="https://img.shields.io/badge/Healthcare-DHIS2-informational?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAERSURBVCiRpZKxSgNBEIa/vb29S0IuIAhBsRGx0MbSRrSwsbGxEVsLH8BCfANfwM5GtLKwEOy0tRQLQbAQJBaCgiBBrnLZ3Z3xck44UYP+1cD8/8zszGj0ZvKo7f4D7y2y5SN5cqJB4F6h7f4DfqWQ/WHzOugHvi+uO4+v+w+1Y6EQVTQK3SvU9fB19fF1/wEXXeDZ8nz5fpgHvi+uO4/vNdcOg1rQvULb/Qf8SiH7w+Y10A88X193Hl/3H2rHQiGqaBQ=&logoColor=white&color=2bbc8a" alt="DHIS2" className="h-7" />
+                <img src="https://img.shields.io/badge/Healthcare-OpenMRS-informational?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAERSURBVCiRpZKxSgNBEIa/vb29S0IuIAhBsRGx0MbSRrSwsbGxEVsLH8BCfANfwM5GtLKwEOy0tRQLQbAQJBaCgiBBrnLZ3Z3xck44UYP+1cD8/8zszGj0ZvKo7f4D7y2y5SN5cqJB4F6h7f4DfqWQ/WHzOugHvi+uO4+v+w+1Y6EQVTQK3SvU9fB19fF1/wEXXeDZ8nz5fpgHvi+uO4/vNdcOg1rQvULb/Qf8SiH7w+Y10A88X113Hl/3H2rHQiGqaBQ=&logoColor=white&color=2bbc8a" alt="OpenMRS" className="h-7" />
+                <img src="https://img.shields.io/badge/Healthcare-FHIR-informational?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAERSURBVCiRpZKxSgNBEIa/vb29S0IuIAhBsRGx0MbSRrSwsbGxEVsLH8BCfANfwM5GtLKwEOy0tRQLQbAQJBaCgiBBrnLZ3Z3xck44UYP+1cD8/8zszGj0ZvKo7f4D7y2y5SN5cqJB4F6h7f4DfqWQ/WHzOugHvi+uO4+v+w+1Y6EQVTQK3SvU9fB19fF1/wEXXeDZ8nz5fpgHvi+uO4/vNdcOg1rQvULb/Qf8SiH7w+Y10A88X113Hl/3H2rHQiGqaBQ=&logoColor=white&color=2bbc8a" alt="FHIR" className="h-7" />
+                
+                {/* Project Management */}
+                <img src="https://img.shields.io/badge/Tools-Jira-informational?style=flat&logo=jira&logoColor=white&color=2bbc8a" alt="Jira" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Trello-informational?style=flat&logo=trello&logoColor=white&color=2bbc8a" alt="Trello" className="h-7" />
+                <img src="https://img.shields.io/badge/Tools-Asana-informational?style=flat&logo=asana&logoColor=white&color=2bbc8a" alt="Asana" className="h-7" />
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
