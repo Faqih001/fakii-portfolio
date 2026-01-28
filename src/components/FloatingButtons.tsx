@@ -45,7 +45,6 @@ const FloatingButtons = () => {
               svg.setAttribute("width", "28");
               svg.setAttribute("height", "28");
               svg.setAttribute("fill", "currentColor");
-              svg.className = "fill-current text-white";
               const path1 = document.createElementNS(ns, "path");
               path1.setAttribute("d", "M20.52 3.48A11.76 11.76 0 0012 0C5.37 0 .08 5.29.08 11.92c0 2.1.55 4.16 1.6 5.98L0 24l6.28-1.64A11.9 11.9 0 0012 23.84c6.63 0 11.92-5.29 11.92-11.92 0-3.18-1.24-6.17-3.4-8.44z");
               const path2 = document.createElementNS(ns, "path");

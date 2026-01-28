@@ -109,7 +109,14 @@ Answer questions professionally and accurately based on this context. If asked a
     setIsLoading(true);
 
     try {
-      const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-thinking-exp-01-21:generateContent?key=AIzaSyCFw_dSFApHwpyB0FvDNkagOFehESo0QKk", {
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY as string | undefined;
+      if (!apiKey) {
+        throw new Error("Missing Gemini API key. Set VITE_GEMINI_API_KEY in your .env file.");
+      }
+
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-thinking-exp-01-21:generateContent?key=${apiKey}`,
+        {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -162,11 +169,12 @@ Answer questions professionally and accurately based on this context. If asked a
       ]);
     } catch (error) {
       console.error("Chat error:", error);
+      const errMsg = (error as Error).message || "I'm sorry, I encountered an error. Please try again.";
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content: "I'm sorry, I encountered an error. Please try again.",
+          content: errMsg,
         },
       ]);
     } finally {
