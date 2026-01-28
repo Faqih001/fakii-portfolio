@@ -504,13 +504,17 @@ const Projects = () => {
                 Let's build something amazing together!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="secondary">
-                  <Github className="w-4 h-4 mr-2" />
-                  View GitHub Profile
+                <Button size="lg" variant="secondary" asChild>
+                  <a href="https://github.com/Faqih001" target="_blank" rel="noopener noreferrer">
+                    <Github className="w-4 h-4 mr-2" />
+                    View GitHub Profile
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Get In Touch
+                <Button size="lg" variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20" asChild>
+                  <Link to="/contact">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Get In Touch
+                  </Link>
                 </Button>
               </div>
             </CardContent>
