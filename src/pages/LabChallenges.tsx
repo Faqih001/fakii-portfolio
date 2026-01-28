@@ -356,11 +356,11 @@ const LabChallenges = () => {
                 I'm always looking for new technical challenges and research opportunities. 
                 Let's collaborate on innovative solutions!
               </p>
-              <a href="/contact">
-                <Button size="lg" variant="secondary">
+              <Button size="lg" variant="secondary" asChild>
+                <Link to="/contact">
                   Get In Touch
-                </Button>
-              </a>
+                </Link>
+              </Button>
             </CardContent>
           </Card>
         </div>
