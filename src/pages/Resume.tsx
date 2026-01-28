@@ -178,19 +178,24 @@ const Resume = () => {
 
   const achievements = [
     {
+      title: "Digital Health Transformation",
+      description: "Successfully deployed and integrated national health information systems (KHIS/DHIS2, OpenMRS, eCHIS, iHRIS) supporting healthcare delivery across multiple facilities",
+      year: "2024-2025"
+    },
+    {
       title: "Best FinTech Innovation Award",
-      description: "AliXe FinTech Application - Recognized for outstanding innovation in financial technology",
-      year: "2024"
+      description: "AliXe FinTech/Agri-Trading Application - Recognized for outstanding innovation in financial technology and agricultural trading",
+      year: "2023"
     },
     {
-      title: "Healthcare Digital Transformation",
-      description: "Successfully deployed KenyaEMR across 15+ healthcare facilities",
-      year: "2024"
+      title: "International Collaboration Excellence",
+      description: "Led cross-functional teams across Kenya, Uganda, and international organizations delivering impactful digital solutions",
+      year: "2022-2025"
     },
     {
-      title: "Community Developer Advocate",
-      description: "Mentored 20+ junior developers in full-stack development",
-      year: "2023-2024"
+      title: "Open Source Contributions",
+      description: "Active contributor to healthcare IT projects including MamasHub, KenyaEMR, and iHRIS platforms",
+      year: "2023-2025"
     }
   ];
 
@@ -202,13 +207,18 @@ const Resume = () => {
           <div className="text-center space-y-6">
             <Badge variant="outline" className="mb-4">Professional Resume</Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-              Resume
+              Fakii Mohammed
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive overview of my professional journey, skills, and achievements
+            <p className="text-xl text-muted-foreground">
+              Software/Full-stack Engineer
+            </p>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Motivated technology professional with 4+ years of hands-on experience in software development, 
+              systems analysis, data workflows, and emerging technologies. Strong interest in AI tools, automation, 
+              and smart digital solutions.
             </p>
             <a
-              href="https://drive.google.com/uc?export=download&id=1Cz6UdDhUXvvWeimgEb0MtPaXo81mnCzE"
+              href="https://docs.google.com/document/d/13SSAtepBus2e5zSipSqKQQ3BZetnkC0e/edit?usp=sharing&ouid=106720930584260395877&rtpof=true&sd=true"
               target="_blank"
               rel="noopener noreferrer"
             >
