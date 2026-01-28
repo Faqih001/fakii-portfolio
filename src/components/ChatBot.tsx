@@ -115,7 +115,7 @@ Answer questions professionally and accurately based on this context. If asked a
       }
 
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-thinking-exp-01-21:generateContent?key=${apiKey}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
         {
         method: "POST",
         headers: {
@@ -197,9 +197,9 @@ Answer questions professionally and accurately based on this context. If asked a
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-end sm:p-4 p-0 pointer-events-none">
-      <Card className="w-full sm:max-w-md sm:h-[600px] h-full sm:rounded-lg rounded-none flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up">
+      <Card className="w-full sm:max-w-md sm:h-[600px] h-full sm:rounded-2xl rounded-none flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up">
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b bg-gradient-primary text-primary-foreground">
+        <div className="flex items-center justify-between p-4 border-b bg-gradient-primary text-primary-foreground sm:rounded-t-2xl">
           <div className="flex items-center space-x-3">
             <div className="relative">
               <Bot className="w-8 h-8" />
