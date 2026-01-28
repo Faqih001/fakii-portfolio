@@ -24,8 +24,18 @@ const ChatBot = ({ isOpen, onClose }: ChatBotProps) => {
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [showQuickPrompts, setShowQuickPrompts] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const quickPrompts = [
+    { icon: "💼", text: "Tell me about his experience" },
+    { icon: "🚀", text: "What are his key projects?" },
+    { icon: "🛠️", text: "What are his technical skills?" },
+    { icon: "🎓", text: "What's his education background?" },
+    { icon: "📧", text: "How can I contact him?" },
+    { icon: "🏆", text: "What certifications does he have?" },
+  ];
 
   const portfolioContext = `
 You are an AI assistant for Fakii Mohammed's professional portfolio. Answer questions based on this information:
@@ -100,11 +110,12 @@ Answer questions professionally and accurately based on this context. If asked a
     }
   }, [isOpen]);
 
-  const sendMessage = async () => {
-    if (!input.trim() || isLoading) return;
+  const sendMessage = async (messageText?: string) => {
+    const userMessage = (messageText || input).trim();
+    if (!userMessage || isLoading) return;
 
-    const userMessage = input.trim();
     setInput("");
+    setShowQuickPrompts(false);
     setMessages((prev) => [...prev, { role: "user", content: userMessage }]);
     setIsLoading(true);
 
@@ -192,7 +203,98 @@ Answer questions professionally and accurately based on this context. If asked a
       sendMessage();
     }
   };
+const handleQuickPrompt = (promptText: string) => {
+    sendMessage(promptText);
+  };
 
+  const formatMessage = (text: string) => {
+    // Split by lines
+    const lines = text.split('\n');
+    const formattedLines: JSX.Element[] = [];
+
+    lines.forEach((line, index) => {
+      // Handle bullet points
+      if (line.trim().startsWith('*') || line.trim().startsWith('-')) {
+        const content = line.replace(/^[\s]*[*-][\s]*/, '');
+        formattedLines.push(
+          <div key={index} className="flex gap-2 ml-2 my-1">
+            <span className="text-primary mt-0.5">•</span>
+            <span className="flex-1">{formatInlineText(content)}</span>
+          </div>
+        );
+      }
+      // Handle numbered lists
+      else if (line.trim().match(/^\d+\./)) {
+        const content = line.replace(/^[\s]*\d+\.[\s]*/, '');
+        const number = line.match(/\d+/)?.[0];
+        formattedLines.push(
+          <div key={index} className="flex gap-2 ml-2 my-1">
+            <span className="text-primary font-semibold mt-0.5">{number}.</span>
+            <span className="flex-1">{formatInlineText(content)}</span>
+          </div>
+        );
+      }
+      // Handle headings with **
+      else if (line.trim().match(/^\*\*.+\*\*:?$/)) {
+        const content = line.replace(/\*\*/g, '');
+        formattedLines.push(
+          <div key={index} className="font-semibold text-primary my-2">
+            {content}
+          </div>
+        );
+      }3 ${
+                    message.role === "user"
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-muted"
+                  }`}
+                >
+                  {message.role === "assistant" && message.thinking && (
+                    <div className="mb-2 text-xs opacity-70 italic flex items-center gap-1">
+                      <Sparkles className="w-3 h-3" />
+                      <span>Thinking process applied</span>
+                    </div>
+                  )}
+                  <div className="text-sm">
+                    {message.role === "assistant" ? formatMessage(message.content) : message.content}
+                  </div>
+                </div>
+              </div>
+            ))}
+            {isLoading && (
+              <div className="flex justify-start">
+                <div className="bg-muted rounded-2xl px-4 py-2 flex items-center gap-2">
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                  <span className="text-sm">Thinking...</span>
+                </div>
+              </div>
+            )}
+
+            {/* Quick Prompt Buttons */}
+            {showQuickPrompts && messages.length === 1 && !isLoading && (
+              <div className="space-y-2 mt-4">
+                <p className="text-xs text-muted-foreground text-center mb-3">Quick questions:</p>
+                <div className="grid grid-cols-2 gap-2">
+                  {quickPrompts.map((prompt, index) => (
+                    <Button
+                      key={index}
+                      variant="outline"
+                      size="sm"
+                      onClick={() => handleQuickPrompt(prompt.text)}
+                      className="justify-start text-left h-auto py-2 px-3 rounded-xl hover:bg-primary/10 transition-colors"
+                    >
+                      <span className="mr-2">{prompt.icon}</span>
+                      <span className="text-xs flex-1">{prompt.text}</span>
+                    </Button>
+                  ))}
+    return parts.map((part, i) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={i} className="font-semibold">{part.slice(2, -2)}</strong>;
+      }
+      return <span key={i}>{part}</span>;
+    });
+  };
+
+  
   if (!isOpen) return null;
 
   return (
