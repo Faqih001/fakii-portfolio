@@ -1,4 +1,4 @@
-import { ArrowRight, Code, Database, Brain, Shield, Award, ExternalLink } from "lucide-react";
+import { ArrowRight, Code, Database, Brain, Shield, Award, ExternalLink, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -383,6 +383,86 @@ const Home = () => {
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Testimonials */}
+      <section className="py-24 bg-[#1a1a1a] relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <p className="text-sm text-muted-foreground uppercase tracking-wider">WHAT PEOPLE SAY</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Client <span className="text-primary">Testimonials</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Testimonial 1 - Guriflex */}
+            <Card className="bg-[#2a2a2a] border-[#3a3a3a] hover:border-primary/50 transition-all duration-300 group">
+              <CardContent className="p-8 space-y-6">
+                <Quote className="w-12 h-12 text-primary" />
+                <p className="text-muted-foreground leading-relaxed italic">
+                  "Fakii built our real estate platform with exceptional attention to detail. 
+                  The property listing system is intuitive, and our clients love the seamless 
+                  search experience. He delivered ahead of schedule and the platform has significantly 
+                  increased our online inquiries."
+                </p>
+                <div className="flex items-center gap-4 pt-4 border-t border-border">
+                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
+                    AA
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Abdirahim Abdullahi</p>
+                    <p className="text-sm text-muted-foreground">CEO, Guriflex Real Estate</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 2 - Kulthum Limited */}
+            <Card className="bg-[#2a2a2a] border-[#3a3a3a] hover:border-primary/50 transition-all duration-300 group">
+              <CardContent className="p-8 space-y-6">
+                <Quote className="w-12 h-12 text-primary" />
+                <p className="text-muted-foreground leading-relaxed italic">
+                  "We engaged Fakii to develop our corporate platform and internal dashboards. 
+                  His technical expertise and understanding of our diverse operations—from construction 
+                  to waste management—was impressive. The system has streamlined our workflows and 
+                  improved interdepartmental communication remarkably."
+                </p>
+                <div className="flex items-center gap-4 pt-4 border-t border-border">
+                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
+                    AS
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Ali Said Ali</p>
+                    <p className="text-sm text-muted-foreground">CEO, Kulthum Limited</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Testimonial 3 - Cardiff Global Limited */}
+            <Card className="bg-[#2a2a2a] border-[#3a3a3a] hover:border-primary/50 transition-all duration-300 group">
+              <CardContent className="p-8 space-y-6">
+                <Quote className="w-12 h-12 text-primary" />
+                <p className="text-muted-foreground leading-relaxed italic">
+                  "Fakii transformed our digital presence across East & Central Africa. 
+                  He built a robust website that showcases our logistics and security services 
+                  professionally. His work ethic, responsiveness, and ability to deliver complex 
+                  solutions on time made him an invaluable partner for our expansion."
+                </p>
+                <div className="flex items-center gap-4 pt-4 border-t border-border">
+                  <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
+                    AM
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Ahmed Mohamed</p>
+                    <p className="text-sm text-muted-foreground">CEO, Cardiff Global Limited</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
