@@ -443,9 +443,9 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950 border-gray-800 text-gray-100">
+              <Card key={index} className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 overflow-hidden border">
                 <CardHeader className="space-y-4 pb-4">
                   <div className="flex items-center gap-2 flex-wrap">
                     <Badge variant="destructive" className="text-xs bg-pink-600 hover:bg-pink-700 border-0">
@@ -457,32 +457,32 @@ const Home = () => {
                   </div>
                   
                   <div>
-                    <CardTitle className="text-2xl font-bold text-white mb-2">
+                    <CardTitle className="text-2xl font-bold text-foreground mb-2">
                       {project.title}
                     </CardTitle>
-                    <div className="flex items-center text-sm text-gray-400 mb-1">
+                    <div className="flex items-center text-sm text-muted-foreground mb-1">
                       <Building className="h-3 w-3 mr-1" />
                       <span>{project.role}</span>
                     </div>
-                    <div className="text-xs text-gray-500">{project.dateRange}</div>
+                    <div className="text-xs text-muted-foreground">{project.dateRange}</div>
                   </div>
                 </CardHeader>
                 
                 <CardContent className="space-y-6">
                   {/* The Challenge */}
                   <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">THE CHALLENGE</h4>
-                    <p className="text-sm text-gray-300 leading-relaxed">
+                    <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-2">THE CHALLENGE</h4>
+                    <p className="text-sm text-foreground leading-relaxed">
                       {project.challenge}
                     </p>
                   </div>
                   
                   {/* What I Did */}
                   <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">WHAT I DID</h4>
+                    <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-2">WHAT I DID</h4>
                     <ul className="space-y-1.5">
                       {project.whatIDid.map((item, idx) => (
-                        <li key={idx} className="text-sm text-gray-300 flex items-start">
+                        <li key={idx} className="text-sm text-foreground flex items-start">
                           <span className="text-primary mr-2 flex-shrink-0">•</span>
                           <span>{item}</span>
                         </li>
@@ -492,10 +492,10 @@ const Home = () => {
                   
                   {/* Results */}
                   <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">RESULTS</h4>
+                    <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-3">RESULTS</h4>
                     <div className="grid grid-cols-2 gap-3">
                       {project.results.map((result, idx) => (
-                        <div key={idx} className="border border-gray-800 rounded-lg p-3 text-center hover:border-primary/50 transition-colors">
+                        <div key={idx} className="border border-border rounded-lg p-3 text-center hover:border-primary/50 transition-colors">
                           <div className="flex items-center justify-center gap-1 text-xl font-bold text-primary mb-1">
                             {result.metric}
                             {result.icon === "up" ? (
@@ -504,7 +504,7 @@ const Home = () => {
                               <TrendingDown className="h-4 w-4 text-green-500" />
                             )}
                           </div>
-                          <div className="text-xs text-gray-400">{result.label}</div>
+                          <div className="text-xs text-muted-foreground">{result.label}</div>
                         </div>
                       ))}
                     </div>
@@ -512,10 +512,10 @@ const Home = () => {
                   
                   {/* Tech Stack */}
                   <div>
-                    <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">TECH STACK</h4>
+                    <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-2">TECH STACK</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.techStack.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="outline" className="text-xs border-gray-700 text-gray-300 hover:border-primary hover:text-primary transition-colors">
+                        <Badge key={techIndex} variant="outline" className="text-xs hover:border-primary hover:text-primary transition-colors">
                           {tech}
                         </Badge>
                       ))}

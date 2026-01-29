@@ -444,11 +444,11 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {filteredProjects.map((project, index) => (
             <Card
               key={project.id}
-              className="group hover-scale transition-all duration-300 shadow-card hover:shadow-glow border-0 bg-gradient-to-br from-gray-900 to-gray-950 text-gray-100 animate-slide-up"
+              className="group hover-scale transition-all duration-300 shadow-card hover:shadow-glow border animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="pb-4">
@@ -465,15 +465,15 @@ const Projects = () => {
                 
                 <div className="space-y-2">
                   {project.role && (
-                    <div className="flex items-center text-xs text-gray-400 mb-1">
+                    <div className="flex items-center text-xs text-muted-foreground mb-1">
                       <Building className="h-3 w-3 mr-1" />
                       <span>{project.role}</span>
                     </div>
                   )}
                   {project.dateRange && (
-                    <div className="text-xs text-gray-500 mb-2">{project.dateRange}</div>
+                    <div className="text-xs text-muted-foreground mb-2">{project.dateRange}</div>
                   )}
-                  <CardTitle className="text-xl font-semibold text-white group-hover:text-primary transition-colors">
+                  <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                     {project.title}
                   </CardTitle>
                 </div>
@@ -483,8 +483,8 @@ const Projects = () => {
                 {/* Challenge Section (if available) */}
                 {project.challenge && (
                   <div>
-                    <h4 className="font-bold text-xs text-gray-400 uppercase tracking-wider mb-2">THE CHALLENGE</h4>
-                    <p className="text-sm text-gray-300 leading-relaxed">
+                    <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-2">THE CHALLENGE</h4>
+                    <p className="text-sm text-foreground leading-relaxed">
                       {project.challenge}
                     </p>
                   </div>
@@ -493,10 +493,10 @@ const Projects = () => {
                 {/* What I Did Section (if available) */}
                 {project.whatIDid && project.whatIDid.length > 0 && (
                   <div>
-                    <h4 className="font-bold text-xs text-gray-400 uppercase tracking-wider mb-2">WHAT I DID</h4>
+                    <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-2">WHAT I DID</h4>
                     <ul className="space-y-1.5">
                       {project.whatIDid.map((item, idx) => (
-                        <li key={idx} className="text-sm text-gray-300 flex items-start">
+                        <li key={idx} className="text-sm text-foreground flex items-start">
                           <span className="text-primary mr-2 flex-shrink-0">•</span>
                           <span>{item}</span>
                         </li>
@@ -508,10 +508,10 @@ const Projects = () => {
                 {/* Results Section (if available) */}
                 {project.results && project.results.length > 0 && (
                   <div>
-                    <h4 className="font-bold text-xs text-gray-400 uppercase tracking-wider mb-3">RESULTS</h4>
+                    <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-3">RESULTS</h4>
                     <div className="grid grid-cols-2 gap-2">
                       {project.results.map((result, idx) => (
-                        <div key={idx} className="border border-gray-800 rounded-lg p-2.5 text-center hover:border-primary/50 transition-colors">
+                        <div key={idx} className="border border-border rounded-lg p-2.5 text-center hover:border-primary/50 transition-colors">
                           <div className="flex items-center justify-center gap-1 text-lg font-bold text-primary mb-1">
                             {result.metric}
                             {result.trend === "up" ? (
@@ -520,7 +520,7 @@ const Projects = () => {
                               <TrendingDown className="h-3 w-3 text-green-500" />
                             ) : null}
                           </div>
-                          <div className="text-xs text-gray-400">{result.label}</div>
+                          <div className="text-xs text-muted-foreground">{result.label}</div>
                         </div>
                       ))}
                     </div>
@@ -529,17 +529,17 @@ const Projects = () => {
 
                 {/* Description (fallback if no challenge) */}
                 {!project.challenge && (
-                  <CardDescription className="text-sm text-gray-300 leading-relaxed">
+                  <CardDescription className="text-sm text-foreground leading-relaxed">
                     {project.description}
                   </CardDescription>
                 )}
 
                 {/* Technologies */}
                 <div>
-                  <h4 className="font-bold text-xs text-gray-400 uppercase tracking-wider mb-2">TECH STACK</h4>
+                  <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-2">TECH STACK</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs border-gray-700 text-gray-300 hover:border-primary hover:text-primary transition-colors">
+                      <Badge key={tech} variant="outline" className="text-xs hover:border-primary hover:text-primary transition-colors">
                         {tech}
                       </Badge>
                     ))}
@@ -548,10 +548,10 @@ const Projects = () => {
 
                 {/* Key Features */}
                 <div>
-                  <h4 className="font-medium text-xs text-gray-400 mb-2">Key Features</h4>
+                  <h4 className="font-medium text-xs text-muted-foreground mb-2">Key Features</h4>
                   <ul className="space-y-1">
                     {project.features.slice(0, 4).map((feature, idx) => (
-                      <li key={idx} className="text-xs text-gray-400 flex items-center">
+                      <li key={idx} className="text-xs text-muted-foreground flex items-center">
                         <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0" />
                         {feature}
                       </li>
@@ -570,7 +570,7 @@ const Projects = () => {
                     </Button>
                   )}
                   {project.github && (
-                    <Button size="sm" variant="outline" className="flex-1 border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white" asChild>
+                    <Button size="sm" variant="outline" className="flex-1" asChild>
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-3 h-3 mr-1" />
                         Code
@@ -578,7 +578,7 @@ const Projects = () => {
                     </Button>
                   )}
                   {!project.liveUrl && !project.github && (
-                    <Button size="sm" variant="outline" className="flex-1 border-gray-700" disabled>
+                    <Button size="sm" variant="outline" className="flex-1" disabled>
                       <ExternalLink className="w-3 h-3 mr-1" />
                       Coming Soon
                     </Button>
