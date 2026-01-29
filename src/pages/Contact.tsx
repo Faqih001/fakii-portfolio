@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -173,11 +174,11 @@ const Contact = () => {
               <CardContent className="p-6">
                 <div className="grid grid-cols-2 gap-4 text-center">
                   <div>
-                    <div className="text-2xl font-bold text-primary">24h</div>
+                    <AnimatedCounter target={24} suffix="h" className="text-2xl font-bold text-primary" />
                     <div className="text-xs text-muted-foreground">Average Response</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-primary">95%</div>
+                    <AnimatedCounter target={95} suffix="%" className="text-2xl font-bold text-primary" />
                     <div className="text-xs text-muted-foreground">Client Satisfaction</div>
                   </div>
                 </div>

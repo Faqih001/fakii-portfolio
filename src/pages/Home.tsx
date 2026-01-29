@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 const Home = () => {
   const skills = [
@@ -171,13 +172,13 @@ const Home = () => {
               <div className="space-y-6">
                 <Card className="p-6 shadow-card hover:shadow-elegant transition-all duration-300">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl font-bold text-primary">4+</div>
+                    <AnimatedCounter target={4} suffix="+" className="text-3xl font-bold text-primary" />
                     <div className="text-sm text-muted-foreground">Years Experience</div>
                   </div>
                 </Card>
                 <Card className="p-6 shadow-card hover:shadow-elegant transition-all duration-300">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl font-bold text-primary">20+</div>
+                    <AnimatedCounter target={20} suffix="+" className="text-3xl font-bold text-primary" />
                     <div className="text-sm text-muted-foreground">Projects Completed</div>
                   </div>
                 </Card>
@@ -185,13 +186,13 @@ const Home = () => {
               <div className="space-y-6 sm:mt-12">
                 <Card className="p-6 shadow-card hover:shadow-elegant transition-all duration-300">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl font-bold text-primary">10+</div>
+                    <AnimatedCounter target={10} suffix="+" className="text-3xl font-bold text-primary" />
                     <div className="text-sm text-muted-foreground">Certifications</div>
                   </div>
                 </Card>
                 <Card className="p-6 shadow-card hover:shadow-elegant transition-all duration-300">
                   <div className="text-center space-y-2">
-                    <div className="text-3xl font-bold text-primary">7</div>
+                    <AnimatedCounter target={7} className="text-3xl font-bold text-primary" />
                     <div className="text-sm text-muted-foreground">Organizations Served</div>
                   </div>
                 </Card>
@@ -244,15 +245,15 @@ const Home = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
             <div className="border border-border/20 rounded-2xl p-8 text-center hover:border-primary/50 transition-colors">
-              <div className="text-5xl font-bold text-primary mb-2">4+</div>
+              <AnimatedCounter target={4} suffix="+" className="text-5xl font-bold text-primary mb-2" />
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div className="border border-border/20 rounded-2xl p-8 text-center hover:border-primary/50 transition-colors">
-              <div className="text-5xl font-bold text-primary mb-2">20+</div>
+              <AnimatedCounter target={20} suffix="+" className="text-5xl font-bold text-primary mb-2" />
               <div className="text-sm text-muted-foreground">Projects Delivered</div>
             </div>
             <div className="border border-border/20 rounded-2xl p-8 text-center hover:border-primary/50 transition-colors">
-              <div className="text-5xl font-bold text-primary mb-2">7</div>
+              <AnimatedCounter target={7} className="text-5xl font-bold text-primary mb-2" />
               <div className="text-sm text-muted-foreground">Organizations Served</div>
             </div>
           </div>
