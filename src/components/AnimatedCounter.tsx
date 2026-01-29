@@ -16,8 +16,11 @@ const AnimatedCounter = ({ target, duration = 2000, suffix = "", className = "" 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !isVisible) {
+          if (entry.isIntersecting) {
             setIsVisible(true);
+            setCount(0); // Reset count when entering viewport
+          } else {
+            setIsVisible(false);
           }
         });
       },
@@ -33,7 +36,7 @@ const AnimatedCounter = ({ target, duration = 2000, suffix = "", className = "" 
         observer.unobserve(counterRef.current);
       }
     };
-  }, [isVisible]);
+  }, []);
 
   useEffect(() => {
     if (!isVisible) return;
