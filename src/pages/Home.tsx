@@ -59,7 +59,7 @@ const Home = () => {
   return (
     <div className="space-y-0">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pb-24 md:pb-32">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-12 md:pt-0 pb-24 md:pb-32">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
