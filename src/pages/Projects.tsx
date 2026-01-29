@@ -10,7 +10,7 @@ const Projects = () => {
     {
       id: 1,
       title: "MamaShub - Maternal Health Platform (MOH 216)",
-      role: "Lead Full-Stack Developer",
+      role: "Full-Stack Developer",
       dateRange: "Jan 2023 - Present",
       description: "Maternal and child health platform built on Google Open Health Stack to digitize the Mother-Child Booklet (MOH 216), supporting ANC/PNC data capture, reporting, and continuity of care.",
       challenge: "Kenya's maternal and child healthcare faced critical gaps in data continuity and standardization across health facilities, with paper-based booklets prone to loss and inconsistent record-keeping.",
