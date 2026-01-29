@@ -51,7 +51,9 @@ const Home = () => {
         { metric: "500+", label: "Properties Listed", icon: "up" },
         { metric: "150%", label: "Online Inquiries Increase", icon: "up" },
         { metric: "85%", label: "Customer Satisfaction", icon: "up" },
-        { metric: "30%", label: "Faster Transaction Time", icon: "down" }
+        { metric: "30%", label: "Faster Transaction Time", icon: "down" },
+        { metric: "2000+", label: "Monthly Visitors", icon: "up" },
+        { metric: "95%", label: "Listing Accuracy", icon: "up" }
       ],
       techStack: ["Next.js", "Tailwind CSS", "MongoDB Atlas", "IntaSend", "TypeScript"],
       color: "from-purple-500 to-pink-600"
@@ -73,7 +75,9 @@ const Home = () => {
         { metric: "60%", label: "Operational Efficiency Gain", icon: "up" },
         { metric: "100+", label: "Active Clients", icon: "up" },
         { metric: "3", label: "Divisions Integrated", icon: "up" },
-        { metric: "45%", label: "Reduced Response Time", icon: "down" }
+        { metric: "45%", label: "Reduced Response Time", icon: "down" },
+        { metric: "500+", label: "Projects Tracked", icon: "up" },
+        { metric: "92%", label: "Client Retention Rate", icon: "up" }
       ],
       techStack: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Express"],
       color: "from-blue-700 to-indigo-800"
@@ -95,7 +99,9 @@ const Home = () => {
         { metric: "200%", label: "Web Traffic Growth", icon: "up" },
         { metric: "45+", label: "B2B Inquiries Monthly", icon: "up" },
         { metric: "90%", label: "Mobile User Satisfaction", icon: "up" },
-        { metric: "65%", label: "Increase in RFQ Submissions", icon: "up" }
+        { metric: "65%", label: "Increase in RFQ Submissions", icon: "up" },
+        { metric: "15+", label: "Countries Reached", icon: "up" },
+        { metric: "88%", label: "Lead Conversion Rate", icon: "up" }
       ],
       techStack: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
       color: "from-gray-700 to-gray-900"
@@ -117,7 +123,9 @@ const Home = () => {
         { metric: "500+", label: "Families Registered", icon: "up" },
         { metric: "40%", label: "Increase in On-Time Submissions", icon: "up" },
         { metric: "85%", label: "Parent Engagement Rate", icon: "up" },
-        { metric: "30%", label: "Reduction in Missed Deadlines", icon: "down" }
+        { metric: "30%", label: "Reduction in Missed Deadlines", icon: "down" },
+        { metric: "1500+", label: "Assignments Tracked", icon: "up" },
+        { metric: "92%", label: "User Satisfaction Score", icon: "up" }
       ],
       techStack: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
       color: "from-yellow-500 to-orange-600"
@@ -515,7 +523,7 @@ const Home = () => {
                   {/* Results */}
                   <div>
                     <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-3">RESULTS</h4>
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
                       {project.results.map((result, idx) => (
                         <div key={idx} className="border border-border rounded-lg p-3 text-center hover:border-primary/50 transition-colors">
                           <div className="flex items-center justify-center gap-1 text-xl font-bold text-primary mb-1">
