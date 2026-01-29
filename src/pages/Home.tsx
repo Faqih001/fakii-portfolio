@@ -201,6 +201,64 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Trusted By & Stats */}
+      <section className="py-16 bg-[#0a0a0a] border-y border-border/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Trusted by teams */}
+          <div className="text-center mb-12">
+            <p className="text-sm text-muted-foreground mb-6">Trusted by teams at</p>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <span className="text-sm font-medium">Belva Digital</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <span className="text-sm font-medium">Moringa School</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <span className="text-sm font-medium">Weza Prosoft</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <span className="text-sm font-medium">Paya Finance</span>
+              </div>
+              <div className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <span className="text-sm font-medium">Brance Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+            <div className="border border-border/20 rounded-2xl p-8 text-center hover:border-primary/50 transition-colors">
+              <div className="text-5xl font-bold text-primary mb-2">4+</div>
+              <div className="text-sm text-muted-foreground">Years Experience</div>
+            </div>
+            <div className="border border-border/20 rounded-2xl p-8 text-center hover:border-primary/50 transition-colors">
+              <div className="text-5xl font-bold text-primary mb-2">20+</div>
+              <div className="text-sm text-muted-foreground">Projects Delivered</div>
+            </div>
+            <div className="border border-border/20 rounded-2xl p-8 text-center hover:border-primary/50 transition-colors">
+              <div className="text-5xl font-bold text-primary mb-2">7</div>
+              <div className="text-sm text-muted-foreground">Organizations Served</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Skills Snapshot */}
       <section className="py-24 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
