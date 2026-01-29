@@ -202,7 +202,7 @@ const Home = () => {
       </section>
 
       {/* Trusted By & Stats */}
-      <section className="py-16 bg-[#0a0a0a] border-y border-border/10">
+      <section className="py-16 bg-gradient-to-br from-primary/10 via-accent/6 to-primary/4 border-y border-border/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Trusted by teams */}
           <div className="text-center mb-12">
