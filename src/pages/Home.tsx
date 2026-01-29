@@ -388,7 +388,7 @@ const Home = () => {
       </section>
 
       {/* Client Testimonials */}
-      <section className="py-24 bg-[#1a1a1a] relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-muted/30 via-background to-muted/20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <p className="text-sm text-muted-foreground uppercase tracking-wider">WHAT PEOPLE SAY</p>
@@ -399,7 +399,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Testimonial 1 - Guriflex */}
-            <Card className="bg-[#2a2a2a] border-[#3a3a3a] hover:border-primary/50 transition-all duration-300 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 hover:shadow-elegant transition-all duration-300 group">
               <CardContent className="p-8 space-y-6">
                 <Quote className="w-12 h-12 text-primary" />
                 <p className="text-muted-foreground leading-relaxed italic">
@@ -421,7 +421,7 @@ const Home = () => {
             </Card>
 
             {/* Testimonial 2 - Kulthum Limited */}
-            <Card className="bg-[#2a2a2a] border-[#3a3a3a] hover:border-primary/50 transition-all duration-300 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 hover:shadow-elegant transition-all duration-300 group">
               <CardContent className="p-8 space-y-6">
                 <Quote className="w-12 h-12 text-primary" />
                 <p className="text-muted-foreground leading-relaxed italic">
@@ -443,7 +443,7 @@ const Home = () => {
             </Card>
 
             {/* Testimonial 3 - Cardiff Global Limited */}
-            <Card className="bg-[#2a2a2a] border-[#3a3a3a] hover:border-primary/50 transition-all duration-300 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 hover:shadow-elegant transition-all duration-300 group">
               <CardContent className="p-8 space-y-6">
                 <Quote className="w-12 h-12 text-primary" />
                 <p className="text-muted-foreground leading-relaxed italic">
