@@ -486,35 +486,38 @@ const Projects = () => {
     },
     {
       id: 15,
-      title: "Parent Assignment Helper",
+      title: "HomeworkHelper - AI-Powered Homework Assistant",
       role: "Full-Stack Developer",
       dateRange: "Apr 2024 - Jun 2024",
-      description: "Education support platform for parents and learners with assignment tracking and progress monitoring.",
-      challenge: "Parents struggled to keep track of their children's multiple assignments across different subjects, leading to missed deadlines and decreased academic performance during remote learning.",
+      description: "HomeworkHelper is an AI-powered educational platform that helps Kenyan students with their homework by providing step-by-step explanations and learning guidance. Built with modern web technologies and integrated with Google Gemini AI.",
+      challenge: "Parents struggled to keep track of their children's multiple assignments across different subjects, leading to missed deadlines and decreased academic performance during remote learning. The challenge was creating an intuitive system that worked for both tech-savvy and non-technical parents.",
       whatIDid: [
-        "Developed assignment tracking system with Firebase real-time database",
-        "Built parent dashboard for progress monitoring and notifications",
-        "Implemented deadline reminders and performance reporting features"
+        "Integrated Google Gemini for AI-powered homework assistance",
+        "Built image analysis to accept homework photos and extract questions",
+        "Implemented multi-subject support with adaptive learning flows",
+        "Designed responsive UI for parents and students; added secure auth and progress tracking",
+        "Implemented Supabase backend and payment integrations (IntaSend / Mpesa / Airtel Money)",
+        "Built pricing tiers with daily renewable questions and analytics dashboards"
       ],
       results: [
-        { metric: "500+", label: "Families Registered", trend: "up" },
-        { metric: "40%", label: "On-Time Submissions", trend: "up" },
-        { metric: "85%", label: "Parent Engagement Rate", trend: "up" },
-        { metric: "30%", label: "Missed Deadlines Reduced", trend: "down" },
-        { metric: "1500+", label: "Assignments Tracked", trend: "up" },
-        { metric: "92%", label: "Student Performance Improvement", trend: "up" }
+        { metric: "3K+", label: "Students Supported", trend: "up" },
+        { metric: "50K+", label: "Questions Answered", trend: "up" },
+        { metric: "85%", label: "User Satisfaction", trend: "up" },
+        { metric: "75%", label: "Homework Completion Increase", trend: "up" },
+        { metric: "95%", label: "AI Suggestion Accuracy", trend: "up" },
+        { metric: "92%", label: "Parent Adoption Rate", trend: "up" }
       ],
-      technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
+      technologies: ["React", "Node.js", "Supabase", "Google Gemini", "IntaSend", "Mpesa", "TypeScript"],
       features: [
-        "Assignment tracking",
-        "Progress monitoring",
-        "Parent dashboard",
-        "Student profiles",
-        "Deadline reminders",
-        "Performance reports"
+        "AI-Powered Assistance (Google Gemini)",
+        "Multi-Subject Support",
+        "Image Analysis (upload homework photos)",
+        "Flexible Pricing: Free, family plans, pay-per-use",
+        "Daily Renewable Questions",
+        "Secure Authentication & Progress Tracking"
       ],
       category: "Education",
-      liveUrl: "https://parent-assignment-helper.vercel.app/",
+      liveUrl: "https://homeworkhelper.example.com",
       icon: <Code className="w-6 h-6" />,
       color: "from-yellow-500 to-orange-600"
     },
