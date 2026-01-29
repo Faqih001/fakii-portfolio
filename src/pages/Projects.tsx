@@ -386,11 +386,10 @@ const Projects = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6">
-            My Projects
+            Enterprise Solutions That <span className="text-primary">Scale & Deliver</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Showcasing innovative solutions across FinTech, Healthcare IT, and Real Estate. 
-            Each project demonstrates my commitment to building scalable, secure, and user-centric applications.
+            From award-winning FinTech platforms to national health systems serving 100+ facilities—explore a portfolio of production-ready applications trusted by organizations across Kenya, Uganda, and East Africa.
           </p>
         </div>
 
@@ -413,38 +412,98 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <Card
               key={project.id}
-              className="group hover-scale transition-all duration-300 shadow-card hover:shadow-glow border-0 bg-card/50 backdrop-blur-sm animate-slide-up"
+              className="group hover-scale transition-all duration-300 shadow-card hover:shadow-glow border-0 bg-gradient-to-br from-gray-900 to-gray-950 text-gray-100 animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <CardHeader>
-                <div className="flex items-start justify-between mb-4">
-                  <div className={`p-3 rounded-lg bg-gradient-to-br ${project.color} text-white`}>
-                    {project.icon}
-                  </div>
-                  <Badge variant="secondary" className="ml-2">
+              <CardHeader className="pb-4">
+                <div className="flex items-center gap-2 flex-wrap mb-4">
+                  <Badge variant="destructive" className="text-xs bg-pink-600 hover:bg-pink-700 border-0">
                     {project.category}
                   </Badge>
+                  {project.award && (
+                    <Badge variant="secondary" className="text-xs bg-primary text-primary-foreground border-0">
+                      🏆 {project.award}
+                    </Badge>
+                  )}
                 </div>
-                <CardTitle className="text-xl font-semibold group-hover:text-primary transition-colors">
-                  {project.title}
-                </CardTitle>
-                <CardDescription className="text-sm text-muted-foreground leading-relaxed">
-                  {project.description}
-                </CardDescription>
-                {project.award && (
-                  <Badge variant="default" className="w-fit mt-2">
-                    🏆 {project.award}
-                  </Badge>
-                )}
+                
+                <div className="space-y-2">
+                  {project.role && (
+                    <div className="flex items-center text-xs text-gray-400 mb-1">
+                      <Building className="h-3 w-3 mr-1" />
+                      <span>{project.role}</span>
+                    </div>
+                  )}
+                  {project.dateRange && (
+                    <div className="text-xs text-gray-500 mb-2">{project.dateRange}</div>
+                  )}
+                  <CardTitle className="text-xl font-semibold text-white group-hover:text-primary transition-colors">
+                    {project.title}
+                  </CardTitle>
+                </div>
               </CardHeader>
 
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-5">
+                {/* Challenge Section (if available) */}
+                {project.challenge && (
+                  <div>
+                    <h4 className="font-bold text-xs text-gray-400 uppercase tracking-wider mb-2">THE CHALLENGE</h4>
+                    <p className="text-sm text-gray-300 leading-relaxed">
+                      {project.challenge}
+                    </p>
+                  </div>
+                )}
+                
+                {/* What I Did Section (if available) */}
+                {project.whatIDid && project.whatIDid.length > 0 && (
+                  <div>
+                    <h4 className="font-bold text-xs text-gray-400 uppercase tracking-wider mb-2">WHAT I DID</h4>
+                    <ul className="space-y-1.5">
+                      {project.whatIDid.map((item, idx) => (
+                        <li key={idx} className="text-sm text-gray-300 flex items-start">
+                          <span className="text-primary mr-2 flex-shrink-0">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                
+                {/* Results Section (if available) */}
+                {project.results && project.results.length > 0 && (
+                  <div>
+                    <h4 className="font-bold text-xs text-gray-400 uppercase tracking-wider mb-3">RESULTS</h4>
+                    <div className="grid grid-cols-2 gap-2">
+                      {project.results.map((result, idx) => (
+                        <div key={idx} className="border border-gray-800 rounded-lg p-2.5 text-center hover:border-primary/50 transition-colors">
+                          <div className="flex items-center justify-center gap-1 text-lg font-bold text-primary mb-1">
+                            {result.metric}
+                            {result.trend === "up" ? (
+                              <TrendingUp className="h-3 w-3 text-green-500" />
+                            ) : result.trend === "down" ? (
+                              <TrendingDown className="h-3 w-3 text-green-500" />
+                            ) : null}
+                          </div>
+                          <div className="text-xs text-gray-400">{result.label}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Description (fallback if no challenge) */}
+                {!project.challenge && (
+                  <CardDescription className="text-sm text-gray-300 leading-relaxed">
+                    {project.description}
+                  </CardDescription>
+                )}
+
                 {/* Technologies */}
                 <div>
-                  <h4 className="font-medium text-sm mb-3 text-foreground">Technologies Used</h4>
+                  <h4 className="font-bold text-xs text-gray-400 uppercase tracking-wider mb-2">TECH STACK</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs">
+                      <Badge key={tech} variant="outline" className="text-xs border-gray-700 text-gray-300 hover:border-primary hover:text-primary transition-colors">
                         {tech}
                       </Badge>
                     ))}
@@ -453,10 +512,10 @@ const Projects = () => {
 
                 {/* Key Features */}
                 <div>
-                  <h4 className="font-medium text-sm mb-3 text-foreground">Key Features</h4>
+                  <h4 className="font-medium text-xs text-gray-400 mb-2">Key Features</h4>
                   <ul className="space-y-1">
                     {project.features.slice(0, 4).map((feature, idx) => (
-                      <li key={idx} className="text-xs text-muted-foreground flex items-center">
+                      <li key={idx} className="text-xs text-gray-400 flex items-center">
                         <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0" />
                         {feature}
                       </li>
@@ -465,7 +524,7 @@ const Projects = () => {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex gap-2 pt-4">
+                <div className="flex gap-2 pt-2">
                   {project.liveUrl && (
                     <Button size="sm" className="flex-1" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
@@ -475,7 +534,7 @@ const Projects = () => {
                     </Button>
                   )}
                   {project.github && (
-                    <Button size="sm" variant="outline" className="flex-1" asChild>
+                    <Button size="sm" variant="outline" className="flex-1 border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white" asChild>
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-3 h-3 mr-1" />
                         Code
@@ -483,7 +542,7 @@ const Projects = () => {
                     </Button>
                   )}
                   {!project.liveUrl && !project.github && (
-                    <Button size="sm" variant="outline" className="flex-1" disabled>
+                    <Button size="sm" variant="outline" className="flex-1 border-gray-700" disabled>
                       <ExternalLink className="w-3 h-3 mr-1" />
                       Coming Soon
                     </Button>
