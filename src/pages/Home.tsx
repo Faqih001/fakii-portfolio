@@ -388,7 +388,7 @@ const Home = () => {
       </section>
 
       {/* Client Testimonials */}
-      <section className="py-24 bg-gradient-to-br from-muted/30 via-background to-muted/20 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-primary/5 via-accent/5 to-primary/10 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <p className="text-sm text-muted-foreground uppercase tracking-wider">WHAT PEOPLE SAY</p>
