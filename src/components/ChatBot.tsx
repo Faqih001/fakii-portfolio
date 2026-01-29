@@ -275,8 +275,8 @@ Answer questions professionally and accurately based on this context. If asked a
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-end sm:p-4 p-0 pointer-events-none">
-      <Card className="w-full sm:max-w-md sm:h-[600px] h-full rounded-2xl flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up">
+    <div className="fixed inset-0 z-50 flex items-end justify-end p-0 md:p-4 pointer-events-none">
+      <Card className="w-full md:max-w-md md:h-[600px] h-full max-h-[100dvh] md:max-h-[80vh] rounded-2xl flex flex-col shadow-2xl pointer-events-auto border-2 animate-slide-up md:mr-6 md:mb-6 overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b bg-gradient-primary text-primary-foreground rounded-t-2xl">
           <div className="flex items-center space-x-3">
@@ -338,10 +338,10 @@ Answer questions professionally and accurately based on this context. If asked a
             )}
 
             {/* Quick Prompt Buttons */}
-            {showQuickPrompts && messages.length === 1 && !isLoading && (
+                {showQuickPrompts && messages.length === 1 && !isLoading && (
               <div className="space-y-2 mt-4">
                 <p className="text-xs text-muted-foreground text-center mb-3">Quick questions:</p>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                   {quickPrompts.map((prompt, index) => (
                     <Button
                       key={index}
@@ -361,7 +361,7 @@ Answer questions professionally and accurately based on this context. If asked a
         </ScrollArea>
 
         {/* Input */}
-        <div className="p-4 border-t bg-background rounded-b-2xl">
+              <div className="p-4 border-t bg-background rounded-b-2xl">
           <div className="flex items-center gap-2">
             <input
               ref={inputRef}
@@ -370,14 +370,14 @@ Answer questions professionally and accurately based on this context. If asked a
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Ask me about Fakii's experience, projects, skills..."
-              className="flex-1 px-4 py-3 sm:py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-primary text-sm"
+              className="flex-1 px-4 py-3 md:py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-primary text-sm"
               disabled={isLoading}
             />
             <Button
               onClick={() => sendMessage()}
               disabled={!input.trim() || isLoading}
               size="sm"
-              className="rounded-full sm:w-10 sm:h-10 w-12 h-12 p-0 flex-shrink-0"
+              className="rounded-full md:w-10 md:h-10 w-12 h-12 p-0 flex-shrink-0"
             >
               <Send className="sm:w-4 sm:h-4 w-5 h-5" />
             </Button>
