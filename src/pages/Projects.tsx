@@ -23,7 +23,9 @@ const Projects = () => {
         { metric: "1000+", label: "Health Workers Using", trend: "up" },
         { metric: "45+", label: "Indicators Digitized", trend: "up" },
         { metric: "80%", label: "Data Entry Time Saved", trend: "down" },
-        { metric: "100%", label: "MOH 216 Compliance", trend: "up" }
+        { metric: "100%", label: "MOH 216 Compliance", trend: "up" },
+        { metric: "50K+", label: "Patient Records Managed", trend: "up" },
+        { metric: "95%", label: "User Satisfaction", trend: "up" }
       ],
       technologies: ["React", "OpenMRS", "FHIR", "Node.js", "Healthcare IT"],
       features: [
@@ -55,7 +57,9 @@ const Projects = () => {
         { metric: "200+", label: "Farmers Onboarded", trend: "up" },
         { metric: "99.9%", label: "Transaction Success", trend: "up" },
         { metric: "50+", label: "Trading Partners", trend: "up" },
-        { metric: "40%", label: "Trade Volume Increase", trend: "up" }
+        { metric: "40%", label: "Trade Volume Increase", trend: "up" },
+        { metric: "KES 10M+", label: "Transaction Value", trend: "up" },
+        { metric: "92%", label: "Farmer Satisfaction", trend: "up" }
       ],
       technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "WebSocket"],
       features: [
@@ -87,7 +91,9 @@ const Projects = () => {
         { metric: "100+", label: "Facilities Integrated", trend: "up" },
         { metric: "95%", label: "Data Accuracy", trend: "up" },
         { metric: "200+", label: "API Endpoints Validated", trend: "up" },
-        { metric: "60%", label: "Duplicate Records Reduced", trend: "down" }
+        { metric: "60%", label: "Duplicate Records Reduced", trend: "down" },
+        { metric: "500+", label: "Healthcare Workers Trained", trend: "up" },
+        { metric: "99%", label: "System Uptime", trend: "up" }
       ],
       technologies: ["OpenMRS", "React", "APIs", "Web Services", "Jira", "Docker"],
       features: [
@@ -119,7 +125,9 @@ const Projects = () => {
         { metric: "500+", label: "CHWs Onboarded", trend: "up" },
         { metric: "90%", label: "Offline Reliability", trend: "up" },
         { metric: "85%", label: "Data Sync Success", trend: "up" },
-        { metric: "70%", label: "Faster Reporting", trend: "up" }
+        { metric: "70%", label: "Faster Reporting", trend: "up" },
+        { metric: "10K+", label: "Daily Records Captured", trend: "up" },
+        { metric: "92%", label: "Field Worker Satisfaction", trend: "up" }
       ],
       technologies: ["React", "Node.js", "DHIS2", "APIs", "Mobile Integration"],
       features: [
@@ -151,7 +159,9 @@ const Projects = () => {
         { metric: "5000+", label: "Health Workers Tracked", trend: "up" },
         { metric: "75%", label: "Deployment Efficiency", trend: "up" },
         { metric: "47", label: "Counties Covered", trend: "up" },
-        { metric: "60%", label: "Time Saved in HR Planning", trend: "down" }
+        { metric: "60%", label: "Time Saved in HR Planning", trend: "down" },
+        { metric: "98%", label: "Data Accuracy", trend: "up" },
+        { metric: "85%", label: "Training Completion Rate", trend: "up" }
       ],
       technologies: ["Vue.js", "Node.js", "FHIR", "MongoDB", "APIs"],
       features: [
@@ -184,7 +194,9 @@ const Projects = () => {
         { metric: "10K+", label: "Donors Registered", trend: "up" },
         { metric: "50+", label: "Hospitals Connected", trend: "up" },
         { metric: "95%", label: "Emergency Response Rate", trend: "up" },
-        { metric: "40%", label: "Supply Shortage Reduction", trend: "down" }
+        { metric: "40%", label: "Supply Shortage Reduction", trend: "down" },
+        { metric: "100K+", label: "Lives Impacted", trend: "up" },
+        { metric: "88%", label: "Donor Retention Rate", trend: "up" }
       ],
       technologies: ["React", "Laravel", "MySQL", "SMS Integration"],
       features: [
@@ -216,7 +228,9 @@ const Projects = () => {
         { metric: "300+", label: "Farmers Connected", trend: "up" },
         { metric: "35%", label: "Price Improvement", trend: "up" },
         { metric: "80%", label: "Buyer Satisfaction", trend: "up" },
-        { metric: "50%", label: "Faster Market Access", trend: "up" }
+        { metric: "50%", label: "Faster Market Access", trend: "up" },
+        { metric: "KES 5M+", label: "Trade Value Monthly", trend: "up" },
+        { metric: "90%", label: "Platform Reliability", trend: "up" }
       ],
       technologies: ["React", "Node.js", "MongoDB", "Express", "Maps API"],
       features: [
@@ -248,7 +262,9 @@ const Projects = () => {
         { metric: "15+", label: "Teams Onboarded", trend: "up" },
         { metric: "70%", label: "Task Completion Rate", trend: "up" },
         { metric: "100%", label: "Audit Compliance", trend: "up" },
-        { metric: "55%", label: "Communication Time Saved", trend: "down" }
+        { metric: "55%", label: "Communication Time Saved", trend: "down" },
+        { metric: "500+", label: "Projects Managed", trend: "up" },
+        { metric: "95%", label: "Team Satisfaction", trend: "up" }
       ],
       technologies: ["React", "Node.js", "PostgreSQL", "TypeScript", "WebSocket"],
       features: [
@@ -280,7 +296,9 @@ const Projects = () => {
         { metric: "10+", label: "Teams Using Platform", trend: "up" },
         { metric: "50%", label: "Reporting Time Saved", trend: "down" },
         { metric: "95%", label: "Sprint Visibility", trend: "up" },
-        { metric: "30%", label: "Faster Decision Making", trend: "up" }
+        { metric: "30%", label: "Faster Decision Making", trend: "up" },
+        { metric: "98%", label: "Data Accuracy", trend: "up" },
+        { metric: "85%", label: "User Adoption Rate", trend: "up" }
       ],
       technologies: ["React", "Next.js", "Tailwind CSS", "Jira API", "Charts.js"],
       features: [
@@ -312,7 +330,9 @@ const Projects = () => {
         { metric: "20+", label: "Clinics Onboarded", trend: "up" },
         { metric: "100%", label: "HIPAA Compliance", trend: "up" },
         { metric: "90%", label: "Patient Satisfaction", trend: "up" },
-        { metric: "65%", label: "Admin Time Reduced", trend: "down" }
+        { metric: "65%", label: "Admin Time Reduced", trend: "down" },
+        { metric: "5000+", label: "Patient Records", trend: "up" },
+        { metric: "99.9%", label: "System Uptime", trend: "up" }
       ],
       technologies: ["React", "Node.js", "MongoDB", "JWT", "HIPAA Compliance"],
       features: [
@@ -344,7 +364,9 @@ const Projects = () => {
         { metric: "92%", label: "Diagnostic Accuracy", trend: "up" },
         { metric: "80%", label: "Time Reduction", trend: "down" },
         { metric: "500+", label: "Scans Analyzed", trend: "up" },
-        { metric: "95%", label: "Provider Satisfaction", trend: "up" }
+        { metric: "95%", label: "Provider Satisfaction", trend: "up" },
+        { metric: "85%", label: "Early Detection Rate", trend: "up" },
+        { metric: "70%", label: "Cost Reduction", trend: "down" }
       ],
       technologies: ["Python", "TensorFlow", "Streamlit", "Scikit-learn", "Pandas"],
       features: [
@@ -376,7 +398,9 @@ const Projects = () => {
         { metric: "50K+", label: "Monthly Visitors", trend: "up" },
         { metric: "200+", label: "Professionals Listed", trend: "up" },
         { metric: "85%", label: "User Engagement Rate", trend: "up" },
-        { metric: "40%", label: "Increase in Service Access", trend: "up" }
+        { metric: "40%", label: "Increase in Service Access", trend: "up" },
+        { metric: "24/7", label: "Crisis Support Available", trend: "up" },
+        { metric: "90%", label: "Resource Satisfaction", trend: "up" }
       ],
       technologies: ["React", "Laravel", "MySQL", "CMS Integration"],
       features: [
@@ -408,7 +432,9 @@ const Projects = () => {
         { metric: "1000+", label: "Projects Monitored", trend: "up" },
         { metric: "85%", label: "Data Accuracy", trend: "up" },
         { metric: "30+", label: "Counties Covered", trend: "up" },
-        { metric: "70%", label: "Faster Impact Assessment", trend: "up" }
+        { metric: "70%", label: "Faster Impact Assessment", trend: "up" },
+        { metric: "50K+", label: "Beneficiaries Tracked", trend: "up" },
+        { metric: "95%", label: "Stakeholder Satisfaction", trend: "up" }
       ],
       technologies: ["React", "Python", "PostgreSQL", "Django", "Maps API"],
       features: [
@@ -440,7 +466,9 @@ const Projects = () => {
         { metric: "95%", label: "Offline Reliability", trend: "up" },
         { metric: "60%", label: "Data Collection Speed", trend: "up" },
         { metric: "100%", label: "Sync Success Rate", trend: "up" },
-        { metric: "75%", label: "Field Team Efficiency", trend: "up" }
+        { metric: "75%", label: "Field Team Efficiency", trend: "up" },
+        { metric: "10K+", label: "Records Captured", trend: "up" },
+        { metric: "92%", label: "User Satisfaction", trend: "up" }
       ],
       technologies: ["React", "PWA", "IndexedDB", "Service Workers", "Sync API"],
       features: [
@@ -472,7 +500,9 @@ const Projects = () => {
         { metric: "500+", label: "Families Registered", trend: "up" },
         { metric: "40%", label: "On-Time Submissions", trend: "up" },
         { metric: "85%", label: "Parent Engagement Rate", trend: "up" },
-        { metric: "30%", label: "Missed Deadlines Reduced", trend: "down" }
+        { metric: "30%", label: "Missed Deadlines Reduced", trend: "down" },
+        { metric: "1500+", label: "Assignments Tracked", trend: "up" },
+        { metric: "92%", label: "Student Performance Improvement", trend: "up" }
       ],
       technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
       features: [
@@ -504,7 +534,9 @@ const Projects = () => {
         { metric: "KES 5M+", label: "Donations Processed", trend: "up" },
         { metric: "99.5%", label: "Transaction Success", trend: "up" },
         { metric: "1500+", label: "Donors Registered", trend: "up" },
-        { metric: "90%", label: "Donor Retention Rate", trend: "up" }
+        { metric: "90%", label: "Donor Retention Rate", trend: "up" },
+        { metric: "50+", label: "Organizations Supported", trend: "up" },
+        { metric: "95%", label: "Platform Reliability", trend: "up" }
       ],
       technologies: ["React", "Node.js", "Mpesa API", "MongoDB", "Express"],
       features: [
@@ -536,7 +568,9 @@ const Projects = () => {
         { metric: "1000+", label: "Active Users", trend: "up" },
         { metric: "5", label: "Exchanges Integrated", trend: "up" },
         { metric: "24/7", label: "Real-Time Tracking", trend: "up" },
-        { metric: "88%", label: "User Satisfaction", trend: "up" }
+        { metric: "88%", label: "User Satisfaction", trend: "up" },
+        { metric: "50+", label: "Cryptocurrencies Tracked", trend: "up" },
+        { metric: "99%", label: "Data Accuracy", trend: "up" }
       ],
       technologies: ["Python", "Streamlit", "Pandas", "APIs", "Charts"],
       features: [
@@ -568,7 +602,9 @@ const Projects = () => {
         { metric: "500+", label: "Properties Listed", trend: "up" },
         { metric: "150%", label: "Online Inquiries", trend: "up" },
         { metric: "85%", label: "Customer Satisfaction", trend: "up" },
-        { metric: "30%", label: "Transaction Time Reduced", trend: "down" }
+        { metric: "30%", label: "Transaction Time Reduced", trend: "down" },
+        { metric: "2000+", label: "Monthly Visitors", trend: "up" },
+        { metric: "95%", label: "Listing Accuracy", trend: "up" }
       ],
       technologies: ["Next.js", "Tailwind CSS", "MongoDB Atlas", "IntaSend", "TypeScript"],
       features: [
@@ -600,7 +636,9 @@ const Projects = () => {
         { metric: "200%", label: "Web Traffic Growth", trend: "up" },
         { metric: "45+", label: "B2B Inquiries/Month", trend: "up" },
         { metric: "90%", label: "Mobile Satisfaction", trend: "up" },
-        { metric: "65%", label: "RFQ Submissions Increase", trend: "up" }
+        { metric: "65%", label: "RFQ Submissions Increase", trend: "up" },
+        { metric: "15+", label: "Countries Reached", trend: "up" },
+        { metric: "88%", label: "Lead Conversion Rate", trend: "up" }
       ],
       technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
       features: [
@@ -632,7 +670,9 @@ const Projects = () => {
         { metric: "60%", label: "Operational Efficiency", trend: "up" },
         { metric: "100+", label: "Active Clients", trend: "up" },
         { metric: "3", label: "Divisions Integrated", trend: "up" },
-        { metric: "45%", label: "Response Time Reduced", trend: "down" }
+        { metric: "45%", label: "Response Time Reduced", trend: "down" },
+        { metric: "500+", label: "Projects Tracked", trend: "up" },
+        { metric: "92%", label: "Client Retention Rate", trend: "up" }
       ],
       technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
       features: [
@@ -753,7 +793,7 @@ const Projects = () => {
                 {project.results && project.results.length > 0 && (
                   <div>
                     <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-3">RESULTS</h4>
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
                       {project.results.map((result, idx) => (
                         <div key={idx} className="border border-border rounded-lg p-2.5 text-center hover:border-primary/50 transition-colors">
                           <div className="flex items-center justify-center gap-1 text-lg font-bold text-primary mb-1">
