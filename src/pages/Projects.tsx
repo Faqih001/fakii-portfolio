@@ -43,31 +43,31 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "AliXe FinTech/Agri-Trading Application",
+      title: "AliXe FinTech",
       role: "Chief Technology Officer",
       dateRange: "Aug 2022 - Dec 2023",
-      description: "Award-winning FinTech/Agri-trading platform with user-centered workflows, secure transactions, and real-time data capture for financial inclusion.",
-      challenge: "Rural farmers and agri-traders lacked access to secure, transparent financial platforms, limiting their ability to trade agricultural products and access financial services.",
+      description: "Digital restaurant discovery, menu, booking and analytics platform connecting diners with restaurants while enabling menu management and business insights for owners.",
+      challenge: "Diners struggled to discover accurate menus, availability, and reliable booking options, while restaurants lacked digital booking, menu management and analytics tools to understand customer behavior.",
       whatIDid: [
-        "Led complete technical architecture and full-stack development",
-        "Implemented end-to-end encryption and multi-factor authentication",
-        "Built real-time analytics dashboards for market insights"
+        "Led technical architecture and built the full-stack platform",
+        "Implemented restaurant discovery, digital menus and real-time table booking",
+        "Built analytics dashboards for booking trends, menu performance and customer insights"
       ],
       results: [
-        { metric: "200+", label: "Farmers Onboarded", trend: "up" },
-        { metric: "99.9%", label: "Transaction Success", trend: "up" },
-        { metric: "50+", label: "Trading Partners", trend: "up" },
-        { metric: "40%", label: "Trade Volume Increase", trend: "up" },
-        { metric: "KES 10M+", label: "Transaction Value", trend: "up" },
-        { metric: "92%", label: "Farmer Satisfaction", trend: "up" }
+        { metric: "1000+", label: "Restaurants Listed", trend: "up" },
+        { metric: "50K+", label: "Monthly Users", trend: "up" },
+        { metric: "80%", label: "Reservation Conversion", trend: "up" },
+        { metric: "30%", label: "Faster Booking Flow", trend: "down" },
+        { metric: "85%", label: "Repeat Diners", trend: "up" },
+        { metric: "95%", label: "Owner Satisfaction", trend: "up" }
       ],
-      technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "WebSocket"],
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe", "WebSocket"],
       features: [
-        "User authentication & authorization",
-        "Secure financial transactions",
-        "Real-time analytics dashboard",
-        "Payment gateway integration",
-        "Agri-trading marketplace",
+        "Restaurant discovery & search",
+        "Digital menus & item management",
+        "Table booking & reservation management",
+        "Booking analytics & reporting",
+        "Ratings & reviews",
         "Mobile-responsive design"
       ],
       award: "Best FinTech Innovation Award",
