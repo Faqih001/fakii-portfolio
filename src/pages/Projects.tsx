@@ -10,7 +10,19 @@ const Projects = () => {
     {
       id: 1,
       title: "MamaShub - Maternal Health Platform (MOH 216)",
+      role: "Lead Full-Stack Developer",
+      dateRange: "Jan 2023 - Present",
       description: "Maternal and child health platform built on Google Open Health Stack to digitize the Mother-Child Booklet (MOH 216), supporting ANC/PNC data capture, reporting, and continuity of care.",
+      challenge: "Kenya's maternal and child healthcare faced critical gaps in data continuity and standardization across health facilities, with paper-based booklets prone to loss and inconsistent record-keeping.",
+      whatIDid: [
+        "Architected platform on Google Open Health Stack using React and OpenMRS",
+        "Implemented FHIR standards for seamless data interoperability",
+        "Developed ANC/PNC modules with real-time data validation"
+      ],
+      results: [
+        { metric: "1000+", label: "Health Workers Using", trend: "up" },
+        { metric: "45+", label: "Indicators Digitized", trend: "up" }
+      ],
       technologies: ["React", "OpenMRS", "FHIR", "Node.js", "Healthcare IT"],
       features: [
         "Digital Mother-Child Booklet",
@@ -28,7 +40,19 @@ const Projects = () => {
     {
       id: 2,
       title: "AliXe FinTech/Agri-Trading Application",
+      role: "Chief Technology Officer",
+      dateRange: "Aug 2022 - Dec 2023",
       description: "Award-winning FinTech/Agri-trading platform with user-centered workflows, secure transactions, and real-time data capture for financial inclusion.",
+      challenge: "Rural farmers and agri-traders lacked access to secure, transparent financial platforms, limiting their ability to trade agricultural products and access financial services.",
+      whatIDid: [
+        "Led complete technical architecture and full-stack development",
+        "Implemented end-to-end encryption and multi-factor authentication",
+        "Built real-time analytics dashboards for market insights"
+      ],
+      results: [
+        { metric: "200+", label: "Farmers Onboarded", trend: "up" },
+        { metric: "99.9%", label: "Transaction Success", trend: "up" }
+      ],
       technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "WebSocket"],
       features: [
         "User authentication & authorization",
@@ -46,7 +70,19 @@ const Projects = () => {
     {
       id: 3,
       title: "KenyaEMR / OpenMRS 3.x (O3)",
+      role: "Integration Engineer",
+      dateRange: "Jun 2021 - Dec 2022",
       description: "Contributions to KenyaEMR/OpenMRS supporting national health information systems, interoperability, testing, and deployments across healthcare facilities.",
+      challenge: "Fragmented health information systems across Kenya created data silos, compromising patient care continuity and limiting effective national health reporting.",
+      whatIDid: [
+        "Led API integration across multiple national health systems",
+        "Developed middleware for real-time data synchronization",
+        "Trained 500+ healthcare workers on integrated workflows"
+      ],
+      results: [
+        { metric: "100+", label: "Facilities Integrated", trend: "up" },
+        { metric: "95%", label: "Data Accuracy", trend: "up" }
+      ],
       technologies: ["OpenMRS", "React", "APIs", "Web Services", "Jira", "Docker"],
       features: [
         "Hospital system integration",
