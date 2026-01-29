@@ -108,7 +108,7 @@ const Home = () => {
                   <img
                     src="/lovable-uploads/bbbaf73d-05a0-421e-b604-c65ba14c4f25.png"
                     alt="Fakii Mohammed - Professional Portrait"
-                    className="w-80 h-96 object-cover rounded-2xl shadow-2xl"
+                    className="w-80 h-96 object-cover rounded-2xl shadow-2xl filter grayscale"
                   />
                 </div>
               </div>
