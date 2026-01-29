@@ -35,70 +35,92 @@ const Home = () => {
 
   const featuredProjects = [
     {
-      title: "MamaShub - Maternal Health Platform",
+      title: "Guriflex – Real Estate Marketplace",
       role: "Lead Full-Stack Developer",
-      category: "Healthcare IT",
+      category: "Real Estate",
       badge: "Featured",
-      dateRange: "Jan 2023 - Present",
-      challenge: "Kenya's maternal and child healthcare faced critical gaps in data continuity and standardization. Healthcare workers needed a digital solution to replace the traditional Mother-Child Booklet (MOH 216) that would work seamlessly across facilities while maintaining compliance with national health standards.",
+      dateRange: "Mar 2023 - Aug 2023",
+      challenge: "Guriflex Real Estate needed a professional digital platform to showcase properties, streamline buyer-seller interactions, and establish credibility in Kenya's competitive real estate market where most transactions still relied on manual processes and lacked transparency.",
       whatIDid: [
-        "Architected and built the platform on Google Open Health Stack using React and OpenMRS",
-        "Implemented FHIR standards for seamless data interoperability across health facilities",
-        "Developed ANC/PNC modules with real-time data capture and validation",
-        "Led user research sessions with 50+ healthcare workers to optimize workflows"
+        "Built Next.js marketplace with advanced search and filtering capabilities for property discovery",
+        "Integrated IntaSend payment gateway for secure property transactions and deposits",
+        "Developed admin panel for property verification and listing management",
+        "Implemented responsive design optimized for mobile property browsing experience"
       ],
       results: [
-        { metric: "1000+", label: "Health Workers Using Platform", icon: "up" },
-        { metric: "45+", label: "Health Indicators Digitized", icon: "up" },
-        { metric: "80%", label: "Reduction in Data Entry Time", icon: "down" },
-        { metric: "100%", label: "MOH 216 Compliance", icon: "up" }
+        { metric: "500+", label: "Properties Listed", icon: "up" },
+        { metric: "150%", label: "Online Inquiries Increase", icon: "up" },
+        { metric: "85%", label: "Customer Satisfaction", icon: "up" },
+        { metric: "30%", label: "Faster Transaction Time", icon: "down" }
       ],
-      techStack: ["React", "OpenMRS", "FHIR", "Node.js", "PostgreSQL", "Docker"],
-      color: "from-pink-500 to-rose-600"
+      techStack: ["Next.js", "Tailwind CSS", "MongoDB Atlas", "IntaSend", "TypeScript"],
+      color: "from-purple-500 to-pink-600"
     },
     {
-      title: "AliXe FinTech Platform",
-      role: "Chief Technology Officer",
-      category: "FinTech",
+      title: "Kulthum Limited",
+      role: "Full-Stack Developer",
+      category: "Corporate",
       badge: "Featured",
-      dateRange: "Aug 2022 - Dec 2023",
-      challenge: "Rural farmers and agri-traders lacked access to secure, transparent financial platforms for trading agricultural products. The challenge was building a trusted FinTech ecosystem that could handle complex transactions while ensuring financial inclusion for traditionally underserved communities.",
+      dateRange: "Dec 2023 - Feb 2024",
+      challenge: "Kulthum Limited's diversified operations across construction, catering, and waste management lacked a unified digital platform for client communication, project tracking, and service management, leading to operational silos and communication inefficiencies.",
       whatIDid: [
-        "Led the complete technical architecture and development of the FinTech/Agri-trading platform",
-        "Implemented end-to-end encryption and multi-factor authentication for secure transactions",
-        "Built real-time analytics dashboards for market insights and trading patterns",
-        "Integrated mobile money APIs (Mpesa) for seamless payment processing"
+        "Built multi-service platform with dedicated dashboards for each division",
+        "Developed client portal for project tracking and service requests",
+        "Implemented reporting system for cross-departmental operations insights",
+        "Created service management workflows optimized for diverse operations"
       ],
       results: [
-        { metric: "200+", label: "Farmers Onboarded", icon: "up" },
-        { metric: "50+", label: "Trading Partners", icon: "up" },
-        { metric: "99.9%", label: "Transaction Success Rate", icon: "up" },
-        { metric: "40%", label: "Increase in Trade Volume", icon: "up" }
+        { metric: "60%", label: "Operational Efficiency Gain", icon: "up" },
+        { metric: "100+", label: "Active Clients", icon: "up" },
+        { metric: "3", label: "Divisions Integrated", icon: "up" },
+        { metric: "45%", label: "Reduced Response Time", icon: "down" }
       ],
-      techStack: ["React", "Node.js", "MongoDB", "Express", "JWT", "Mpesa API"],
-      color: "from-green-500 to-emerald-600"
+      techStack: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Express"],
+      color: "from-blue-700 to-indigo-800"
     },
     {
-      title: "National Health Systems Integration",
-      role: "Integration Engineer",
-      category: "Healthcare IT",
+      title: "Cardiff Global Limited (CGL)",
+      role: "Full-Stack Developer",
+      category: "Corporate",
       badge: "Featured",
-      dateRange: "Jun 2021 - Dec 2022",
-      challenge: "Kenya's healthcare sector operated with fragmented health information systems (KHIS/DHIS2, OpenMRS, eCHIS, iHRIS) leading to data silos, duplicate efforts, and compromised patient care continuity. The task was to create seamless interoperability across all national systems while maintaining data security and compliance.",
+      dateRange: "Sep 2023 - Nov 2023",
+      challenge: "Cardiff Global Limited needed a professional digital presence to showcase their logistics and security services across East & Central Africa and establish credibility with enterprise clients in a competitive B2B market.",
       whatIDid: [
-        "Led comprehensive API integration across 4 major national health information systems",
-        "Developed middleware solutions for real-time data synchronization and validation",
-        "Conducted security audits and penetration testing aligned with IT governance standards",
-        "Trained 500+ healthcare workers on integrated system workflows and best practices"
+        "Developed Next.js corporate website with service showcase and project portfolio",
+        "Built responsive design optimized for mobile and desktop viewing",
+        "Integrated contact forms and client testimonial management system",
+        "Implemented SEO optimization for improved search engine visibility"
       ],
       results: [
-        { metric: "100+", label: "Facilities Integrated", icon: "up" },
-        { metric: "200+", label: "API Endpoints Validated", icon: "up" },
-        { metric: "95%", label: "Data Accuracy Achieved", icon: "up" },
-        { metric: "60%", label: "Reduction in Duplicate Records", icon: "down" }
+        { metric: "200%", label: "Web Traffic Growth", icon: "up" },
+        { metric: "45+", label: "B2B Inquiries Monthly", icon: "up" },
+        { metric: "90%", label: "Mobile User Satisfaction", icon: "up" },
+        { metric: "65%", label: "Increase in RFQ Submissions", icon: "up" }
       ],
-      techStack: ["DHIS2", "OpenMRS", "FHIR", "REST APIs", "Docker", "PostgreSQL"],
-      color: "from-blue-500 to-cyan-600"
+      techStack: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+      color: "from-gray-700 to-gray-900"
+    },
+    {
+      title: "Parent Assignment Helper",
+      role: "Full-Stack Developer",
+      category: "Education",
+      badge: "Featured",
+      dateRange: "Apr 2024 - Jun 2024",
+      challenge: "Parents struggled to keep track of their children's multiple assignments across different subjects, leading to missed deadlines and decreased academic performance during remote learning. The challenge was creating an intuitive system that worked for both tech-savvy and non-technical parents.",
+      whatIDid: [
+        "Developed assignment tracking system with Firebase real-time database for instant updates",
+        "Built parent dashboard for progress monitoring and automated notifications",
+        "Implemented deadline reminders and performance reporting features",
+        "Created student profiles with multi-subject assignment organization"
+      ],
+      results: [
+        { metric: "500+", label: "Families Registered", icon: "up" },
+        { metric: "40%", label: "Increase in On-Time Submissions", icon: "up" },
+        { metric: "85%", label: "Parent Engagement Rate", icon: "up" },
+        { metric: "30%", label: "Reduction in Missed Deadlines", icon: "down" }
+      ],
+      techStack: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
+      color: "from-yellow-500 to-orange-600"
     }
   ];
 
@@ -493,7 +515,7 @@ const Home = () => {
                   {/* Results */}
                   <div>
                     <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-3">RESULTS</h4>
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-2 gap-2">
                       {project.results.map((result, idx) => (
                         <div key={idx} className="border border-border rounded-lg p-3 text-center hover:border-primary/50 transition-colors">
                           <div className="flex items-center justify-center gap-1 text-xl font-bold text-primary mb-1">
