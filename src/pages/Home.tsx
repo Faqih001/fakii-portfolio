@@ -405,8 +405,8 @@ const Home = () => {
                 <p className="text-muted-foreground leading-relaxed italic">
                   "Fakii built our real estate platform with exceptional attention to detail. 
                   The property listing system is intuitive, and our clients love the seamless 
-                  search experience. He delivered ahead of schedule and the platform has significantly 
-                  increased our online inquiries."
+                  search experience. He delivered ahead of schedule, and the platform has 
+                  significantly increased our online inquiries and improved our market presence."
                 </p>
                 <div className="flex items-center gap-4 pt-4 border-t border-border">
                   <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
@@ -426,9 +426,9 @@ const Home = () => {
                 <Quote className="w-12 h-12 text-primary" />
                 <p className="text-muted-foreground leading-relaxed italic">
                   "We engaged Fakii to develop our corporate platform and internal dashboards. 
-                  His technical expertise and understanding of our diverse operations—from construction 
-                  to waste management—was impressive. The system has streamlined our workflows and 
-                  improved interdepartmental communication remarkably."
+                  His technical expertise and understanding of our diverse operations—from 
+                  construction to waste management—was impressive. The system has streamlined 
+                  workflows and improved interdepartmental communication across our teams."
                 </p>
                 <div className="flex items-center gap-4 pt-4 border-t border-border">
                   <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
@@ -449,8 +449,8 @@ const Home = () => {
                 <p className="text-muted-foreground leading-relaxed italic">
                   "Fakii transformed our digital presence across East & Central Africa. 
                   He built a robust website that showcases our logistics and security services 
-                  professionally. His work ethic, responsiveness, and ability to deliver complex 
-                  solutions on time made him an invaluable partner for our expansion."
+                  professionally. His work ethic, responsiveness, and ability to deliver 
+                  complex solutions on time made him an invaluable partner for our growth."
                 </p>
                 <div className="flex items-center gap-4 pt-4 border-t border-border">
                   <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">
