@@ -310,7 +310,7 @@ const Projects = () => {
         "Custom reporting"
       ],
       category: "Enterprise",
-      liveUrl: "https://v0-jiravision-dashboard.vercel.app/",
+      liveUrl: "https://jiravision.vercel.app/",
       icon: <Database className="w-6 h-6" />,
       color: "from-purple-600 to-pink-600"
     },
