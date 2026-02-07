@@ -218,7 +218,7 @@ const Resume = () => {
               and smart digital solutions.
             </p>
             <a
-              href="https://drive.google.com/file/d/1bEQu8CCxZ-wkyMa52Joq3eB5JninHYJu/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ysqaokWIvzC1akSzx47VFg4lSUncmIPa/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
