@@ -691,6 +691,44 @@ const Projects = () => {
       icon: <Database className="w-6 h-6" />,
       color: "from-blue-700 to-indigo-800"
     }
+    ,
+    {
+      id: 21,
+      title: "Digi Farms — Digital Agriculture Platform",
+      role: "Chief Technology Officer",
+      dateRange: "Nov 2025 - Mar 2026",
+      description: "Full-stack digital agriculture platform for smallholder farmers, agrovets, suppliers, and lenders enabling farm management, diagnostics, marketplace sales, and accessible financing.",
+      challenge: "Smallholder farmers, agrovets and lenders lacked an integrated digital platform for farm management, diagnostics, marketplace sales, and accessible financing — resulting in fragmented supply chains, poor farm-level insights, manual booking/order processes, and limited access to credit.",
+      whatIDid: [
+        "Led architecture and built the full-stack platform using Next.js and TypeScript",
+        "Designed and implemented role-based auth with NextAuth and bcrypt-hashed passwords",
+        "Built marketplace, shopping cart, Stripe payments and invoicing",
+        "Implemented farm profiles, crop management, soil & diagnostic reports, and analytics",
+        "Integrated ML-backed crop diagnostics and Google Maps for agrovet/location services",
+        "Added loan application workflows, lender dashboards and insurance policy management",
+        "Implemented admin CMS, audit logs, dashboards and CI/CD with Vercel and Prisma/Neon Postgres"
+      ],
+      results: [
+        { metric: "1,000+", label: "Farms Listed", trend: "up" },
+        { metric: "25K+", label: "Monthly Users", trend: "up" },
+        { metric: "60%", label: "Marketplace Conversion", trend: "up" },
+        { metric: "30%", label: "Faster booking/order flow", trend: "down" },
+        { metric: "90%+", label: "Owner Satisfaction", trend: "up" }
+      ],
+      technologies: ["Next.js", "TypeScript", "Prisma", "Neon(Postgres)", "Node.js", "Stripe", "Google Maps", "WebSockets", "NextAuth"],
+      features: [
+        "Searchable product listings & supplier profiles",
+        "Shopping cart, orders & Stripe checkout",
+        "Farm profiles, crop & yield tracking",
+        "ML-backed crop diagnostics and recommendations",
+        "Loan application workflows and lender dashboards",
+        "Admin CMS, audit logs and analytics dashboards"
+      ],
+      category: "AgriTech",
+      liveUrl: "https://digi-farms.vercel.app/",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-emerald-500 to-green-600"
+    }
   ];
 
   const categories = ["All", "Healthcare", "FinTech", "AgriTech", "Enterprise", "AI/ML", "Public Sector", "Education", "Tools", "Real Estate", "Corporate"];
