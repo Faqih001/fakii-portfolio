@@ -31,6 +31,7 @@ const Contact = () => {
         toast({
           title: "Message sent successfully!",
           description: "Thank you for reaching out. I'll get back to you within 24 hours.",
+          variant: "success",
         });
         form.reset();
       } else {
