@@ -7,26 +7,41 @@ export default async function handler(req, res) {
 
   const { name, email, phone, subject, message } = req.body;
 
+  if (!name || !email || !subject || !message) {
+    return res.status(400).json({ error: 'name, email, subject and message are required.' });
+  }
+
   const transporter = nodemailer.createTransport({
-    host: 'smtp.resend.com',
-    port: 465,
-    secure: true,
+    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    port: parseInt(process.env.SMTP_PORT || '587', 10),
+    secure: false, // STARTTLS on port 587
     auth: {
-      user: 'resend',
-      pass: process.env.REACT_APP_RESEND_API_KEY,
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASSWORD,
     },
   });
 
   try {
     await transporter.sendMail({
-      from: 'Contact Form <onboarding@resend.dev>',
-      to: 'fakiiahmad001@gmail.com',
-      subject: `[Portfolio] ${subject}`,
+      from: `"Portfolio Contact" <${process.env.SMTP_FROM || process.env.SMTP_USER}>`,
+      to: process.env.SMTP_USER,
       replyTo: email,
-      html: `<p><b>Name:</b> ${name}</p><p><b>Email:</b> ${email}</p><p><b>Phone:</b> ${phone || '-'} </p><p><b>Message:</b><br>${message}</p>`
+      subject: `[Portfolio] ${subject}`,
+      html: `
+        <h2>New message from your portfolio</h2>
+        <p><b>Name:</b> ${name}</p>
+        <p><b>Email:</b> ${email}</p>
+        <p><b>Phone:</b> ${phone || '—'}</p>
+        <p><b>Subject:</b> ${subject}</p>
+        <hr/>
+        <p><b>Message:</b></p>
+        <p>${message.replace(/\n/g, '<br/>')}</p>
+      `,
     });
+
     res.status(200).json({ success: true });
   } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
+    console.error('Mail error:', error.message);
+    res.status(500).json({ error: error.message });
   }
 }
