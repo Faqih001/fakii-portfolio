@@ -10,7 +10,7 @@ const Projects = () => {
     {
       id: 1,
       title: "MamaShub - Maternal Health Platform (MOH 216)",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer", "Backend Developer"],
       dateRange: "Jan 2023 - Present",
       description: "Maternal and child health platform built on Google Open Health Stack to digitize the Mother-Child Booklet (MOH 216), supporting ANC/PNC data capture, reporting, and continuity of care.",
       challenge: "Kenya's maternal and child healthcare faced critical gaps in data continuity and standardization across health facilities, with paper-based booklets prone to loss and inconsistent record-keeping.",
@@ -36,7 +36,7 @@ const Projects = () => {
         "Continuity of care tracking",
         "FHIR standards compliance"
       ],
-      category: "Healthcare",
+      categories: ["Healthcare"],
       github: "https://github.com/Faqih001/mamashub-web",
       icon: <Shield className="w-6 h-6" />,
       color: "from-pink-500 to-rose-600"
@@ -44,7 +44,7 @@ const Projects = () => {
     {
       id: 2,
       title: "AliXe FinTech",
-      role: "Chief Technology Officer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer", "CTO"],
       dateRange: "Aug 2022 - Dec 2023",
       description: "Digital restaurant discovery, menu, booking and analytics platform connecting diners with restaurants while enabling menu management and business insights for owners.",
       challenge: "Diners struggled to discover accurate menus, availability, and reliable booking options, while restaurants lacked digital booking, menu management and analytics tools to understand customer behavior.",
@@ -70,15 +70,15 @@ const Projects = () => {
         "Ratings & reviews",
         "Mobile-responsive design"
       ],
+      categories: ["FinTech"],
       award: "Best FinTech Innovation Award",
-      category: "FinTech",
       icon: <Code className="w-6 h-6" />,
       color: "from-green-500 to-emerald-600"
     },
     {
       id: 3,
       title: "KenyaEMR / OpenMRS 3.x (O3)",
-      role: "Integration Engineer",
+      roles: ["Integration Engineer", "Full-Stack Developer", "Software Developer / Engineer", "Backend Developer"],
       dateRange: "Jun 2021 - Dec 2022",
       description: "Contributions to KenyaEMR/OpenMRS supporting national health information systems, interoperability, testing, and deployments across healthcare facilities.",
       challenge: "Fragmented health information systems across Kenya created data silos, compromising patient care continuity and limiting effective national health reporting.",
@@ -104,7 +104,7 @@ const Projects = () => {
         "Standard Operating Procedures",
         "Bug tracking and resolution"
       ],
-      category: "Healthcare",
+      categories: ["Healthcare"],
       liveUrl: "https://uat.kenyahmis.org/openmrs/spa/login",
       icon: <Shield className="w-6 h-6" />,
       color: "from-blue-500 to-cyan-600"
@@ -112,7 +112,7 @@ const Projects = () => {
     {
       id: 4,
       title: "eCHIS - Community Health Information System",
-      role: "Backend Integration Specialist",
+      roles: ["Backend Developer", "Full-Stack Developer", "Software Developer / Engineer", "Integration Engineer"],
       dateRange: "Mar 2021 - Aug 2021",
       description: "Community health data integration project supporting frontline health workers and national reporting with real-time data capture.",
       challenge: "Community health workers in remote areas needed a mobile-first system for real-time data capture with offline functionality and seamless synchronization with national DHIS2 reporting systems.",
@@ -138,7 +138,7 @@ const Projects = () => {
         "Offline functionality",
         "Data synchronization"
       ],
-      category: "Healthcare",
+      categories: ["Healthcare"],
       github: "https://github.com/Faqih001/echis-2.0-integration",
       icon: <Shield className="w-6 h-6" />,
       color: "from-teal-500 to-cyan-600"
@@ -146,10 +146,10 @@ const Projects = () => {
     {
       id: 5,
       title: "iHRIS Kenya",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer", "Frontend Developer"],
       dateRange: "Sep 2020 - Feb 2021",
       description: "Human Resource Information System for health workforce management, deployment tracking, and reporting across healthcare facilities.",
-      challenge: "Kenya's health sector lacked centralized visibility into workforce deployment, training, and performance data across 47 counties, hindering effective human resource planning and management.",
+      challenge: "Kenya's health sector lacked centralized visibility into workforce deployment, training, and performance data across 47 counties.",
       whatIDid: [
         "Built Vue.js frontend with FHIR-compliant data models for HR management",
         "Developed deployment tracking and certificate management modules",
@@ -172,7 +172,7 @@ const Projects = () => {
         "Certificate management",
         "FHIR integration"
       ],
-      category: "Healthcare",
+      categories: ["Healthcare"],
       liveUrl: "https://v5-demo.ihris.org/",
       github: "https://github.com/Faqih001/iHRIS-Kenya",
       icon: <Shield className="w-6 h-6" />,
@@ -181,10 +181,10 @@ const Projects = () => {
     {
       id: 6,
       title: "DamuKE - National Blood Management",
-      role: "Backend Developer",
+      roles: ["Backend Developer", "Full-Stack Developer", "Software Developer / Engineer"],
       dateRange: "Oct 2022 - Mar 2023",
       description: "National blood donation and transfusion management platform supporting donor-to-recipient workflows and inventory tracking.",
-      challenge: "Kenya's blood transfusion services faced critical challenges with inventory management, donor engagement, and hospital coordination, leading to supply shortages and inefficiencies in emergency situations.",
+      challenge: "Kenya's blood transfusion services faced critical challenges with inventory management, donor engagement, and hospital coordination.",
       whatIDid: [
         "Built Laravel backend for donor registration and blood inventory tracking",
         "Integrated SMS notification system for donor alerts and reminders",
@@ -207,7 +207,7 @@ const Projects = () => {
         "Hospital integration",
         "Reporting dashboard"
       ],
-      category: "Healthcare",
+      categories: ["Healthcare"],
       liveUrl: "https://damuke.health.go.ke/",
       icon: <Shield className="w-6 h-6" />,
       color: "from-red-500 to-pink-600"
@@ -215,10 +215,10 @@ const Projects = () => {
     {
       id: 7,
       title: "Agri-Senti WebApp",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer"],
       dateRange: "Jan 2023 - Jun 2023",
       description: "Agri-tech platform connecting farmers with buyers to optimize supply chains, pricing transparency, and market access.",
-      challenge: "Nakuru County farmers struggled with market access and price discovery, while buyers faced challenges sourcing reliable agricultural products, leading to supply chain inefficiencies and unfair pricing.",
+      challenge: "Nakuru County farmers struggled with market access and price discovery.",
       whatIDid: [
         "Developed farmer-buyer marketplace with real-time pricing algorithms",
         "Integrated geo-location services for localized market connections",
@@ -241,7 +241,7 @@ const Projects = () => {
         "Geo-location services",
         "Mobile responsive"
       ],
-      category: "AgriTech",
+      categories: ["AgriTech"],
       liveUrl: "https://nakuru-agri-senti-webapp.vercel.app/landing",
       icon: <Code className="w-6 h-6" />,
       color: "from-green-600 to-lime-600"
@@ -249,10 +249,10 @@ const Projects = () => {
     {
       id: 8,
       title: "Project Management System (PMS)",
-      role: "Lead Full-Stack Developer",
+      roles: ["Lead Full-Stack Developer", "Software Developer / Engineer", "Full-Stack Developer"],
       dateRange: "Jul 2023 - Dec 2023",
       description: "Enterprise-grade workflow and collaboration platform with task dashboards, role-based access control, audit logs, and reporting.",
-      challenge: "Argon Finance needed a comprehensive project management solution to track deliverables across multiple teams, ensure accountability, and maintain compliance with audit requirements for financial operations.",
+      challenge: "Argon Finance needed a comprehensive project management solution to track deliverables across multiple teams.",
       whatIDid: [
         "Built enterprise-grade PMS with TypeScript for type safety and scalability",
         "Implemented role-based access control with granular permissions",
@@ -275,7 +275,7 @@ const Projects = () => {
         "Reporting & analytics",
         "Project timeline views"
       ],
-      category: "Enterprise",
+      categories: ["Enterprise"],
       liveUrl: "https://argon-pms.vercel.app/",
       icon: <Database className="w-6 h-6" />,
       color: "from-blue-600 to-indigo-600"
@@ -283,10 +283,10 @@ const Projects = () => {
     {
       id: 9,
       title: "Jira Vision Dashboard",
-      role: "Frontend Developer",
+      roles: ["Frontend Developer", "Full-Stack Developer", "Software Developer / Engineer"],
       dateRange: "Feb 2024 - Apr 2024",
       description: "Real-time task and workflow management dashboard with analytics, performance metrics, and data visualization.",
-      challenge: "Development teams struggled with data-driven decision-making due to fragmented Jira metrics and lack of visual insights into sprint performance, burndown rates, and team productivity.",
+      challenge: "Development teams struggled with data-driven decision-making due to fragmented Jira metrics.",
       whatIDid: [
         "Integrated Jira API for real-time task and sprint data aggregation",
         "Built interactive dashboards with Charts.js for performance metrics",
@@ -309,7 +309,7 @@ const Projects = () => {
         "Team collaboration",
         "Custom reporting"
       ],
-      category: "Enterprise",
+      categories: ["Enterprise"],
       liveUrl: "https://jiravision.vercel.app/",
       icon: <Database className="w-6 h-6" />,
       color: "from-purple-600 to-pink-600"
@@ -317,10 +317,10 @@ const Projects = () => {
     {
       id: 10,
       title: "Medicare254",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer", "Backend Developer"],
       dateRange: "May 2024 - Aug 2024",
       description: "Digital healthcare platform for secure patient record management with role-based access control and compliance-ready workflows.",
-      challenge: "Private healthcare clinics in Kenya needed affordable, HIPAA-compliant digital record management systems with integrated appointment scheduling and billing to compete with larger hospital chains.",
+      challenge: "Private healthcare clinics in Kenya needed affordable, HIPAA-compliant digital record management systems.",
       whatIDid: [
         "Developed secure patient record management with JWT authentication",
         "Implemented HIPAA-compliant data handling and encryption protocols",
@@ -343,7 +343,7 @@ const Projects = () => {
         "Billing integration",
         "HIPAA compliance"
       ],
-      category: "Healthcare",
+      categories: ["Healthcare"],
       liveUrl: "https://medicare254.vercel.app/",
       icon: <Shield className="w-6 h-6" />,
       color: "from-blue-500 to-teal-600"
@@ -351,10 +351,10 @@ const Projects = () => {
     {
       id: 11,
       title: "Ovarian Cyst ML Diagnostic API",
-      role: "ML Engineer",
+      roles: ["Machine Learning Engineer", "AI Engineer", "Data Scientist", "Full-Stack Developer"],
       dateRange: "Sep 2024 - Nov 2024",
       description: "Machine learning–powered health diagnostics solution with data preprocessing, inference pipelines, and result visualization.",
-      challenge: "Healthcare providers needed cost-effective AI-assisted diagnostic tools to improve early detection of ovarian cysts, reducing misdiagnosis rates and improving patient outcomes in resource-limited settings.",
+      challenge: "Healthcare providers needed cost-effective AI-assisted diagnostic tools to improve early detection of ovarian cysts.",
       whatIDid: [
         "Trained TensorFlow model on medical imaging data for cyst classification",
         "Built data preprocessing pipeline with Scikit-learn for robust inference",
@@ -377,7 +377,7 @@ const Projects = () => {
         "Interactive UI",
         "Model evaluation"
       ],
-      category: "AI/ML",
+      categories: ["AI/ML", "Healthcare"],
       liveUrl: "https://ovarian-cyst-ml-api.streamlit.app/",
       icon: <Code className="w-6 h-6" />,
       color: "from-purple-500 to-pink-500"
@@ -385,10 +385,10 @@ const Projects = () => {
     {
       id: 12,
       title: "Mental Health Portal – Kenya",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer"],
       dateRange: "Dec 2021 - May 2022",
       description: "Public digital platform providing mental health information, resources, and access to services for Kenyan citizens.",
-      challenge: "Stigma and lack of accessible information hindered mental health awareness in Kenya, while citizens struggled to find qualified professionals and emergency crisis support services.",
+      challenge: "Stigma and lack of accessible information hindered mental health awareness in Kenya.",
       whatIDid: [
         "Developed public-facing portal with CMS for mental health resources",
         "Built professional directory with appointment booking integration",
@@ -411,7 +411,7 @@ const Projects = () => {
         "Professional directory",
         "Appointment booking"
       ],
-      category: "Healthcare",
+      categories: ["Healthcare"],
       liveUrl: "https://mental.health.go.ke/",
       icon: <Shield className="w-6 h-6" />,
       color: "from-indigo-500 to-blue-600"
@@ -419,10 +419,10 @@ const Projects = () => {
     {
       id: 13,
       title: "RUSH (Akvo RTMIS)",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer"],
       dateRange: "Jun 2022 - Nov 2022",
       description: "Real-time monitoring information system for water, sanitation, hygiene, and public infrastructure projects.",
-      challenge: "USAID and UN-HABITAT projects lacked real-time visibility into WASH infrastructure deployment, making it difficult to track project progress, impact, and resource allocation across multiple counties.",
+      challenge: "USAID and UN-HABITAT projects lacked real-time visibility into WASH infrastructure deployment.",
       whatIDid: [
         "Built real-time monitoring dashboard with Django backend and React frontend",
         "Integrated Maps API for geographic visualization of infrastructure projects",
@@ -445,7 +445,7 @@ const Projects = () => {
         "Reporting dashboard",
         "Mobile data capture"
       ],
-      category: "Public Sector",
+      categories: ["Public Sector"],
       liveUrl: "https://rtmis.akvo.org/",
       icon: <Database className="w-6 h-6" />,
       color: "from-cyan-500 to-blue-600"
@@ -453,10 +453,10 @@ const Projects = () => {
     {
       id: 14,
       title: "Web Capture Tool (PWA)",
-      role: "Frontend Developer",
+      roles: ["Frontend Developer", "Full-Stack Developer", "Software Developer / Engineer"],
       dateRange: "Jan 2024 - Mar 2024",
       description: "Offline-friendly progressive web app for structured data capture in field operations with sync capabilities.",
-      challenge: "Field teams in remote areas with unreliable internet connectivity needed robust data capture tools that work offline and automatically sync when connection is restored.",
+      challenge: "Field teams in remote areas with unreliable internet connectivity needed robust data capture tools.",
       whatIDid: [
         "Built PWA with Service Workers for offline-first functionality",
         "Implemented IndexedDB for local data storage and sync mechanisms",
@@ -479,7 +479,7 @@ const Projects = () => {
         "Photo capture",
         "GPS tagging"
       ],
-      category: "Tools",
+      categories: ["Tools"],
       liveUrl: "https://structure-web-capture-tool.vercel.app/",
       icon: <Code className="w-6 h-6" />,
       color: "from-orange-500 to-red-600"
@@ -487,17 +487,16 @@ const Projects = () => {
     {
       id: 15,
       title: "HomeworkHelper - AI-Powered Homework Assistant",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "AI Engineer", "Software Developer / Engineer"],
       dateRange: "Apr 2024 - Jun 2024",
-      description: "HomeworkHelper is an AI-powered educational platform that helps Kenyan students with their homework by providing step-by-step explanations and learning guidance. Built with modern web technologies and integrated with Google Gemini AI.",
-      challenge: "Parents struggled to keep track of their children's multiple assignments across different subjects, leading to missed deadlines and decreased academic performance during remote learning. The challenge was creating an intuitive system that worked for both tech-savvy and non-technical parents.",
+      description: "HomeworkHelper is an AI-powered educational platform that helps Kenyan students with their homework by providing step-by-step explanations and learning guidance.",
+      challenge: "Parents struggled to keep track of their children's multiple assignments across different subjects.",
       whatIDid: [
         "Integrated Google Gemini for AI-powered homework assistance",
         "Built image analysis to accept homework photos and extract questions",
         "Implemented multi-subject support with adaptive learning flows",
-        "Designed responsive UI for parents and students; added secure auth and progress tracking",
-        "Implemented Supabase backend and payment integrations (IntaSend / Mpesa / Airtel Money)",
-        "Built pricing tiers with daily renewable questions and analytics dashboards"
+        "Designed responsive UI for parents and students",
+        "Implemented Supabase backend and payment integrations"
       ],
       results: [
         { metric: "3K+", label: "Students Supported", trend: "up" },
@@ -512,11 +511,10 @@ const Projects = () => {
         "AI-Powered Assistance (Google Gemini)",
         "Multi-Subject Support",
         "Image Analysis (upload homework photos)",
-        "Flexible Pricing: Free, family plans, pay-per-use",
-        "Daily Renewable Questions",
+        "Flexible Pricing",
         "Secure Authentication & Progress Tracking"
       ],
-      category: "Education",
+      categories: ["AI/ML", "Education"],
       liveUrl: "https://homeworkhelper.example.com",
       icon: <Code className="w-6 h-6" />,
       color: "from-yellow-500 to-orange-600"
@@ -524,10 +522,10 @@ const Projects = () => {
     {
       id: 16,
       title: "AmiTech Donation Platform",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer", "Backend Developer"],
       dateRange: "Jul 2024 - Sep 2024",
       description: "Secure donation platform with real-time Mpesa payments, transaction validation, and donor tracking.",
-      challenge: "Non-profit organizations needed a secure, transparent donation platform with mobile money integration to increase donor engagement and automate receipt generation for tax purposes.",
+      challenge: "Non-profit organizations needed a secure, transparent donation platform with mobile money integration.",
       whatIDid: [
         "Integrated Mpesa API for seamless mobile money transactions",
         "Built real-time payment validation and donor tracking system",
@@ -550,7 +548,7 @@ const Projects = () => {
         "Receipt generation",
         "Admin dashboard"
       ],
-      category: "FinTech",
+      categories: ["FinTech"],
       liveUrl: "https://amitech-donations.onrender.com/",
       icon: <Code className="w-6 h-6" />,
       color: "from-green-500 to-teal-600"
@@ -558,10 +556,10 @@ const Projects = () => {
     {
       id: 17,
       title: "CryptoBuddy – Analytics Platform",
-      role: "Data Engineer",
+      roles: ["Data Engineer", "Machine Learning Engineer", "AI Engineer", "Full-Stack Developer"],
       dateRange: "Oct 2023 - Dec 2023",
       description: "Cryptocurrency analytics and portfolio tracking system with dashboards and data aggregation from multiple exchanges.",
-      challenge: "Cryptocurrency investors in Kenya needed consolidated portfolio tracking across multiple exchanges with real-time price analytics and market trend insights to make informed trading decisions.",
+      challenge: "Cryptocurrency investors in Kenya needed consolidated portfolio tracking across multiple exchanges.",
       whatIDid: [
         "Built data aggregation pipeline with Pandas for multi-exchange integration",
         "Developed interactive Streamlit dashboards for portfolio analytics",
@@ -584,7 +582,7 @@ const Projects = () => {
         "Real-time updates",
         "Performance charts"
       ],
-      category: "FinTech",
+      categories: ["FinTech", "AI/ML"],
       liveUrl: "https://cryptobuddy254.streamlit.app/",
       icon: <Code className="w-6 h-6" />,
       color: "from-yellow-500 to-orange-500"
@@ -592,10 +590,10 @@ const Projects = () => {
     {
       id: 18,
       title: "Guriflex – Real Estate Marketplace",
-      role: "Lead Full-Stack Developer",
+      roles: ["Lead Full-Stack Developer", "Full-Stack Developer", "Software Developer / Engineer"],
       dateRange: "Mar 2023 - Aug 2023",
       description: "Real estate marketplace for buying, renting, and selling properties in Kenya with verified listings and secure payments.",
-      challenge: "Guriflex Real Estate needed a professional digital platform to showcase properties, streamline buyer-seller interactions, and establish credibility in Kenya's competitive real estate market.",
+      challenge: "Guriflex Real Estate needed a professional digital platform to showcase properties.",
       whatIDid: [
         "Built Next.js marketplace with advanced search and filtering capabilities",
         "Integrated IntaSend payment gateway for secure property transactions",
@@ -618,7 +616,7 @@ const Projects = () => {
         "Secure payment integration",
         "Property verification"
       ],
-      category: "Real Estate",
+      categories: ["Real Estate"],
       liveUrl: "https://guriflex.co.ke/",
       icon: <Database className="w-6 h-6" />,
       color: "from-purple-500 to-pink-600"
@@ -626,10 +624,10 @@ const Projects = () => {
     {
       id: 19,
       title: "Cardiff Global Limited (CGL)",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer", "Frontend Developer"],
       dateRange: "Sep 2023 - Nov 2023",
       description: "Corporate website supporting logistics, security, and infrastructure services across East & Central Africa.",
-      challenge: "Cardiff Global Limited needed a professional digital presence to showcase their logistics and security services across East & Central Africa and establish credibility with enterprise clients.",
+      challenge: "Cardiff Global Limited needed a professional digital presence to showcase their services.",
       whatIDid: [
         "Developed Next.js corporate website with service showcase and portfolio",
         "Built responsive design optimized for mobile and desktop viewing",
@@ -652,7 +650,7 @@ const Projects = () => {
         "Client testimonials",
         "Responsive design"
       ],
-      category: "Corporate",
+      categories: ["Corporate"],
       liveUrl: "https://www.cgl-support.com/",
       icon: <Database className="w-6 h-6" />,
       color: "from-gray-700 to-gray-900"
@@ -660,10 +658,10 @@ const Projects = () => {
     {
       id: 20,
       title: "Kulthum Limited",
-      role: "Full-Stack Developer",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer"],
       dateRange: "Dec 2023 - Feb 2024",
       description: "Corporate platform and dashboards for diversified operations including construction, catering, and waste management.",
-      challenge: "Kulthum Limited's diversified operations (construction, catering, waste management) lacked a unified digital platform for client communication, project tracking, and service management across departments.",
+      challenge: "Kulthum Limited's diversified operations lacked a unified digital platform.",
       whatIDid: [
         "Built multi-service platform with dedicated dashboards for each division",
         "Developed client portal for project tracking and service requests",
@@ -686,27 +684,23 @@ const Projects = () => {
         "Reporting system",
         "Multi-service platform"
       ],
-      category: "Corporate",
+      categories: ["Corporate"],
       liveUrl: "https://www.kulthumlimited.co.ke/",
       icon: <Database className="w-6 h-6" />,
       color: "from-blue-700 to-indigo-800"
-    }
-    ,
+    },
     {
       id: 21,
       title: "Digi Farms — Digital Agriculture Platform",
-      role: "Chief Technology Officer",
+      roles: ["Chief Technology Officer", "Lead Full-Stack Developer", "Full-Stack Developer", "AI Engineer"],
       dateRange: "Nov 2025 - Mar 2026",
-      description: "Full-stack digital agriculture platform for smallholder farmers, agrovets, suppliers, and lenders enabling farm management, diagnostics, marketplace sales, and accessible financing.",
-      challenge: "Smallholder farmers, agrovets and lenders lacked an integrated digital platform for farm management, diagnostics, marketplace sales, and accessible financing — resulting in fragmented supply chains, poor farm-level insights, manual booking/order processes, and limited access to credit.",
+      description: "Full-stack digital agriculture platform for smallholder farmers, agrovets, suppliers, and lenders.",
+      challenge: "Smallholder farmers, agrovets and lenders lacked an integrated digital platform.",
       whatIDid: [
         "Led architecture and built the full-stack platform using Next.js and TypeScript",
-        "Designed and implemented role-based auth with NextAuth and bcrypt-hashed passwords",
-        "Built marketplace, shopping cart, Stripe payments and invoicing",
-        "Implemented farm profiles, crop management, soil & diagnostic reports, and analytics",
-        "Integrated ML-backed crop diagnostics and Google Maps for agrovet/location services",
-        "Added loan application workflows, lender dashboards and insurance policy management",
-        "Implemented admin CMS, audit logs, dashboards and CI/CD with Vercel and Prisma/Neon Postgres"
+        "Designed and implemented role-based auth",
+        "Built marketplace, shopping cart, Stripe payments",
+        "Integrated ML-backed crop diagnostics"
       ],
       results: [
         { metric: "1,000+", label: "Farms Listed", trend: "up" },
@@ -720,26 +714,242 @@ const Projects = () => {
         "Searchable product listings & supplier profiles",
         "Shopping cart, orders & Stripe checkout",
         "Farm profiles, crop & yield tracking",
-        "ML-backed crop diagnostics and recommendations",
-        "Loan application workflows and lender dashboards",
-        "Admin CMS, audit logs and analytics dashboards"
+        "ML-backed crop diagnostics",
+        "Loan application workflows"
       ],
-      category: "AgriTech",
+      categories: ["AgriTech", "AI/ML"],
       liveUrl: "https://digi-farms.vercel.app/",
       icon: <Code className="w-6 h-6" />,
       color: "from-emerald-500 to-green-600"
+    },
+    {
+      id: 22,
+      title: "KiiBridge Stock Tracker",
+      roles: ["Full-Stack Developer", "AI Engineer", "Data Engineer", "Software Developer / Engineer"],
+      dateRange: "May 2026 - Present",
+      description: "AI-powered stock market intelligence platform with real-time market tracking, watchlists, alerts, and AI-generated summaries.",
+      challenge: "Retail investors often struggle to monitor multiple assets and extract actionable insights.",
+      whatIDid: [
+        "Built a real-time stock tracking platform using Next.js and TypeScript",
+        "Integrated Finnhub APIs for live market data",
+        "Implemented AI-powered stock summaries and sentiment analysis"
+      ],
+      results: [
+        { metric: "10K+", label: "Stocks Indexed", trend: "up" },
+        { metric: "95%", label: "Alert Accuracy", trend: "up" },
+        { metric: "40%", label: "Decision Time Reduced", trend: "down" },
+        { metric: "99.9%", label: "Workflow Reliability", trend: "up" }
+      ],
+      technologies: ["Next.js", "TypeScript", "MongoDB", "Inngest", "Better Auth", "Finnhub", "Gemini AI"],
+      features: [
+        "Real-time stock tracking",
+        "Watchlists & alerts",
+        "AI market summaries",
+        "Company insights",
+        "Automated workflows"
+      ],
+      categories: ["AI/ML", "FinTech"],
+      github: "https://github.com/Faqih001/kiibridge-stock-tracker-app",
+      icon: <TrendingUp className="w-6 h-6" />,
+      color: "from-green-500 to-emerald-600"
+    },
+    {
+      id: 23,
+      title: "KiiBridge Converso AI Tutor",
+      roles: ["Full-Stack Developer", "AI Engineer", "Software Developer / Engineer"],
+      dateRange: "May 2026 - Present",
+      description: "AI-powered SaaS learning management platform enabling personalized tutoring sessions through intelligent voice agents.",
+      challenge: "Students need personalized learning experiences that adapt to their pace.",
+      whatIDid: [
+        "Built LMS SaaS platform using Next.js and Supabase",
+        "Integrated Vapi voice AI agents for interactive tutoring sessions",
+        "Implemented Clerk authentication and subscription management"
+      ],
+      results: [
+        { metric: "500+", label: "Learning Sessions", trend: "up" },
+        { metric: "90%", label: "Student Engagement", trend: "up" },
+        { metric: "4.8/5", label: "Tutor Rating", trend: "up" },
+        { metric: "75%", label: "Session Retention", trend: "up" }
+      ],
+      technologies: ["Next.js", "TypeScript", "Supabase", "Clerk", "Vapi", "Tailwind CSS"],
+      features: [
+        "AI voice tutors",
+        "Subscription billing",
+        "Tutor creation",
+        "Session history",
+        "Learning analytics"
+      ],
+      categories: ["AI/ML", "Education"],
+      github: "https://github.com/Faqih001/kiibridge-saas-app",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-purple-500 to-indigo-600"
+    },
+    {
+      id: 24,
+      title: "KiiBridge AI Interview Platform",
+      roles: ["Full-Stack Developer", "AI Engineer", "Software Developer / Engineer"],
+      dateRange: "Apr 2026 - Present",
+      description: "AI-powered interview preparation platform that simulates technical and behavioral interviews.",
+      challenge: "Job seekers often lack access to realistic interview practice environments.",
+      whatIDid: [
+        "Developed AI-driven interview simulator with speech and text evaluation",
+        "Implemented personalized scoring and feedback engine",
+        "Built interview analytics dashboard"
+      ],
+      results: [
+        { metric: "1K+", label: "Mock Interviews", trend: "up" },
+        { metric: "88%", label: "User Satisfaction", trend: "up" },
+        { metric: "65%", label: "Confidence Increase", trend: "up" }
+      ],
+      technologies: ["Next.js", "TypeScript", "Firebase", "Gemini AI", "Tailwind CSS"],
+      features: [
+        "Mock interviews",
+        "AI feedback",
+        "Performance analytics",
+        "Interview history"
+      ],
+      categories: ["AI/ML"],
+      github: "https://github.com/Faqih001/kiibridge-ai-interview-platform",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-violet-500 to-purple-600"
+    },
+    {
+      id: 25,
+      title: "KiiBridge Expense Tracker",
+      roles: ["Frontend Developer", "Full-Stack Developer", "Software Developer / Engineer"],
+      dateRange: "Mar 2026 - Present",
+      description: "Modern personal finance application helping users track expenses, budgets, and spending patterns.",
+      challenge: "Many users struggle with budgeting and understanding spending habits.",
+      whatIDid: [
+        "Built responsive financial dashboard with data visualizations",
+        "Implemented expense categorization and budgeting workflows",
+        "Developed reporting and trend analysis features"
+      ],
+      results: [
+        { metric: "95%", label: "Budget Tracking Accuracy", trend: "up" },
+        { metric: "40%", label: "Financial Awareness Increase", trend: "up" },
+        { metric: "1K+", label: "Transactions Managed", trend: "up" }
+      ],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
+      features: [
+        "Expense tracking",
+        "Budget planning",
+        "Savings goals",
+        "Financial analytics"
+      ],
+      categories: ["FinTech"],
+      github: "https://github.com/Faqih001/kiibridge-expense-tracker",
+      icon: <TrendingUp className="w-6 h-6" />,
+      color: "from-cyan-500 to-blue-600"
+    },
+    {
+      id: 26,
+      title: "KiiBridge Banking Platform",
+      roles: ["Full-Stack Developer", "Software Developer / Engineer", "Backend Developer"],
+      dateRange: "Feb 2026 - Present",
+      description: "Digital banking platform featuring account management, transaction monitoring, and financial insights.",
+      challenge: "Financial institutions need secure, scalable digital experiences.",
+      whatIDid: [
+        "Developed secure banking workflows and account management features",
+        "Implemented transaction tracking and analytics dashboards",
+        "Built authentication and security controls"
+      ],
+      results: [
+        { metric: "99.9%", label: "Platform Security", trend: "up" },
+        { metric: "5K+", label: "Transactions Simulated", trend: "up" },
+        { metric: "98%", label: "Data Integrity", trend: "up" }
+      ],
+      technologies: ["Next.js", "Appwrite", "Plaid", "Dwolla", "TypeScript"],
+      features: [
+        "Account management",
+        "Transaction history",
+        "Financial analytics",
+        "Secure authentication"
+      ],
+      categories: ["FinTech"],
+      github: "https://github.com/Faqih001/kiibridge-banking-app",
+      icon: <Database className="w-6 h-6" />,
+      color: "from-blue-500 to-indigo-600"
+    },
+    {
+      id: 27,
+      title: "Brainwave AI SaaS Platform",
+      roles: ["Full-Stack Developer", "AI Engineer", "Software Developer / Engineer"],
+      dateRange: "Jan 2026 - Present",
+      description: "Modern AI SaaS application offering content generation, intelligent assistants, and workflow automation.",
+      challenge: "Businesses need affordable AI tools that streamline content creation and automate workflows.",
+      whatIDid: [
+        "Built SaaS architecture with authentication and subscriptions",
+        "Integrated AI-powered content generation workflows",
+        "Developed admin dashboards and usage analytics"
+      ],
+      results: [
+        { metric: "2K+", label: "Generated Outputs", trend: "up" },
+        { metric: "90%", label: "Automation Success", trend: "up" },
+        { metric: "70%", label: "Time Saved", trend: "down" }
+      ],
+      technologies: ["Next.js", "TypeScript", "OpenAI", "Tailwind CSS", "Stripe"],
+      features: [
+        "AI content generation",
+        "Workflow automation",
+        "Subscription management",
+        "Analytics dashboard"
+      ],
+      categories: ["AI/ML"],
+      github: "https://github.com/Faqih001/brainwave-ai-saas",
+      icon: <Code className="w-6 h-6" />,
+      color: "from-fuchsia-500 to-pink-600"
+    },
+    {
+      id: 28,
+      title: "KiiBridge Job Portal",
+      roles: ["Full-Stack Developer", "AI Engineer", "Software Developer / Engineer"],
+      dateRange: "Jun 2026 - Present",
+      description: "Modern recruitment platform connecting employers and job seekers with AI-powered matching.",
+      challenge: "Recruiters and job seekers face fragmented hiring processes with poor candidate matching.",
+      whatIDid: [
+        "Built end-to-end recruitment workflows",
+        "Implemented role-based dashboards for employers and candidates",
+        "Developed AI-powered candidate matching features"
+      ],
+      results: [
+        { metric: "1K+", label: "Applications Managed", trend: "up" },
+        { metric: "85%", label: "Matching Accuracy", trend: "up" },
+        { metric: "60%", label: "Hiring Time Reduced", trend: "down" }
+      ],
+      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS"],
+      features: [
+        "Job listings",
+        "Candidate matching",
+        "Application tracking",
+        "Employer dashboard"
+      ],
+      categories: ["AI/ML", "Enterprise"],
+      github: "https://github.com/Faqih001/kiibridge-job-portal",
+      icon: <Building className="w-6 h-6" />,
+      color: "from-slate-600 to-slate-800"
     }
   ];
 
-  const categories = ["All", "Healthcare", "FinTech", "AgriTech", "Enterprise", "AI/ML", "Public Sector", "Education", "Tools", "Real Estate", "Corporate"];
+  const categories = [
+    "All",
+    "AI/ML",
+    "Healthcare",
+    "FinTech",
+    "AgriTech",
+    "Enterprise",
+    "Public Sector",
+    "Education",
+    "Tools",
+    "Real Estate",
+    "Corporate"
+  ];
 
-  // State for selected category
   const [selectedCategory, setSelectedCategory] = React.useState<string>("All");
 
-  // Filtered projects based on selected category
   const filteredProjects = selectedCategory === "All"
     ? projects
-    : projects.filter((project) => project.category === selectedCategory);
+    : projects.filter((project) => (project.categories || []).includes(selectedCategory));
 
   return (
     <div className="min-h-screen bg-gradient-subtle">
@@ -747,10 +957,11 @@ const Projects = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6">
-            Enterprise Solutions That <span className="text-primary">Scale & Deliver</span>
+            Full-Stack Developer <span className="text-primary">+ AI/ML Specialist</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            From award-winning FinTech platforms to national health systems serving 100+ facilities—explore a portfolio of production-ready applications trusted by organizations across Kenya, Uganda, and East Africa.
+            Production-ready full-stack applications with strong AI/ML integration. 
+            From national health systems to intelligent AI platforms — delivering scalable, intelligent solutions.
           </p>
         </div>
 
@@ -770,158 +981,166 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          {filteredProjects.map((project, index) => (
-            <Card
-              key={project.id}
-              className="group hover-scale transition-all duration-300 shadow-card hover:shadow-glow border animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardHeader className="pb-4">
-                <div className="flex items-center gap-2 flex-wrap mb-4">
-                  <Badge variant="destructive" className="text-xs bg-pink-600 hover:bg-pink-700 border-0">
-                    {project.category}
-                  </Badge>
-                  {project.award && (
-                    <Badge variant="secondary" className="text-xs bg-primary text-primary-foreground border-0">
-                      🏆 {project.award}
-                    </Badge>
-                  )}
-                </div>
-                
-                <div className="space-y-2">
-                  {project.role && (
-                    <div className="flex items-center text-xs text-muted-foreground mb-1">
-                      <Building className="h-3 w-3 mr-1" />
-                      <span>{project.role}</span>
+          {filteredProjects.map((project, index) => {
+            const projectCategories = project.categories || [];
+
+            return (
+              <Card
+                key={project.id}
+                className="group hover-scale transition-all duration-300 shadow-card hover:shadow-glow border animate-slide-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CardHeader className="pb-4">
+                  <div className="flex items-center gap-2 flex-wrap mb-4">
+                    {/* All Categories as Individual Badges */}
+                    {projectCategories.map((cat, idx) => (
+                      <Badge 
+                        key={idx} 
+                        variant="destructive" 
+                        className="text-xs bg-pink-600 hover:bg-pink-700 border-0"
+                      >
+                        {cat}
+                      </Badge>
+                    ))}
+
+                    {project.award && (
+                      <Badge variant="secondary" className="text-xs bg-primary text-primary-foreground border-0">
+                        🏆 {project.award}
+                      </Badge>
+                    )}
+                  </div>
+
+                  {/* Roles Badges */}
+                  {project.roles && project.roles.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5 mb-3">
+                      {project.roles.map((role, idx) => (
+                        <Badge 
+                          key={idx} 
+                          variant="outline" 
+                          className="text-xs font-medium border-primary/30 bg-primary/5 text-primary hover:bg-primary/10"
+                        >
+                          {role}
+                        </Badge>
+                      ))}
                     </div>
                   )}
-                  {project.dateRange && (
-                    <div className="text-xs text-muted-foreground mb-2">{project.dateRange}</div>
-                  )}
-                  <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {project.title}
-                  </CardTitle>
-                </div>
-              </CardHeader>
 
-              <CardContent className="space-y-5">
-                {/* Challenge Section (if available) */}
-                {project.challenge && (
-                  <div>
-                    <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-2">THE CHALLENGE</h4>
-                    <p className="text-sm text-foreground leading-relaxed">
-                      {project.challenge}
-                    </p>
+                  <div className="space-y-2">
+                    {project.dateRange && (
+                      <div className="text-xs text-muted-foreground mb-2">{project.dateRange}</div>
+                    )}
+                    <CardTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                      {project.title}
+                    </CardTitle>
                   </div>
-                )}
-                
-                {/* What I Did Section (if available) */}
-                {project.whatIDid && project.whatIDid.length > 0 && (
+                </CardHeader>
+
+                <CardContent className="space-y-5">
+                  {project.challenge && (
+                    <div>
+                      <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-2">THE CHALLENGE</h4>
+                      <p className="text-sm text-foreground leading-relaxed">
+                        {project.challenge}
+                      </p>
+                    </div>
+                  )}
+                  
+                  {project.whatIDid && project.whatIDid.length > 0 && (
+                    <div>
+                      <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-2">WHAT I DID</h4>
+                      <ul className="space-y-1.5">
+                        {project.whatIDid.map((item, idx) => (
+                          <li key={idx} className="text-sm text-foreground flex items-start">
+                            <span className="text-primary mr-2 flex-shrink-0">•</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  
+                  {project.results && project.results.length > 0 && (
+                    <div>
+                      <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-3">RESULTS</h4>
+                      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
+                        {project.results.map((result, idx) => (
+                          <div key={idx} className="border border-border rounded-lg p-2.5 text-center hover:border-primary/50 transition-colors">
+                            <div className="flex items-center justify-center gap-1 text-lg font-bold text-primary mb-1">
+                              {result.metric}
+                              {result.trend === "up" ? (
+                                <TrendingUp className="h-3 w-3 text-green-500" />
+                              ) : result.trend === "down" ? (
+                                <TrendingDown className="h-3 w-3 text-green-500" />
+                              ) : null}
+                            </div>
+                            <div className="text-xs text-muted-foreground">{result.label}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {!project.challenge && project.description && (
+                    <CardDescription className="text-sm text-foreground leading-relaxed">
+                      {project.description}
+                    </CardDescription>
+                  )}
+
                   <div>
-                    <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-2">WHAT I DID</h4>
-                    <ul className="space-y-1.5">
-                      {project.whatIDid.map((item, idx) => (
-                        <li key={idx} className="text-sm text-foreground flex items-start">
-                          <span className="text-primary mr-2 flex-shrink-0">•</span>
-                          <span>{item}</span>
+                    <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-2">TECH STACK</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech) => (
+                        <Badge key={tech} variant="outline" className="text-xs hover:border-primary hover:text-primary transition-colors">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="font-medium text-xs text-muted-foreground mb-2">Key Features</h4>
+                    <ul className="space-y-1">
+                      {project.features.slice(0, 4).map((feature, idx) => (
+                        <li key={idx} className="text-xs text-muted-foreground flex items-center">
+                          <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0" />
+                          {feature}
                         </li>
                       ))}
                     </ul>
                   </div>
-                )}
-                
-                {/* Results Section (if available) */}
-                {project.results && project.results.length > 0 && (
-                  <div>
-                    <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-3">RESULTS</h4>
-                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
-                      {project.results.map((result, idx) => (
-                        <div key={idx} className="border border-border rounded-lg p-2.5 text-center hover:border-primary/50 transition-colors">
-                          <div className="flex items-center justify-center gap-1 text-lg font-bold text-primary mb-1">
-                            {result.metric}
-                            {result.trend === "up" ? (
-                              <TrendingUp className="h-3 w-3 text-green-500" />
-                            ) : result.trend === "down" ? (
-                              <TrendingDown className="h-3 w-3 text-green-500" />
-                            ) : null}
-                          </div>
-                          <div className="text-xs text-muted-foreground">{result.label}</div>
-                        </div>
-                      ))}
-                    </div>
+
+                  <div className="flex gap-2 pt-2">
+                    {project.liveUrl && (
+                      <Button size="sm" className="flex-1" asChild>
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-3 h-3 mr-1" />
+                          View Live
+                        </a>
+                      </Button>
+                    )}
+                    {project.github && (
+                      <Button size="sm" variant="outline" className="flex-1" asChild>
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-3 h-3 mr-1" />
+                          Code
+                        </a>
+                      </Button>
+                    )}
                   </div>
-                )}
-
-                {/* Description (fallback if no challenge) */}
-                {!project.challenge && (
-                  <CardDescription className="text-sm text-foreground leading-relaxed">
-                    {project.description}
-                  </CardDescription>
-                )}
-
-                {/* Technologies */}
-                <div>
-                  <h4 className="font-bold text-xs text-muted-foreground uppercase tracking-wider mb-2">TECH STACK</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="outline" className="text-xs hover:border-primary hover:text-primary transition-colors">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Key Features */}
-                <div>
-                  <h4 className="font-medium text-xs text-muted-foreground mb-2">Key Features</h4>
-                  <ul className="space-y-1">
-                    {project.features.slice(0, 4).map((feature, idx) => (
-                      <li key={idx} className="text-xs text-muted-foreground flex items-center">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Action Buttons */}
-                <div className="flex gap-2 pt-2">
-                  {project.liveUrl && (
-                    <Button size="sm" className="flex-1" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-3 h-3 mr-1" />
-                        View Live
-                      </a>
-                    </Button>
-                  )}
-                  {project.github && (
-                    <Button size="sm" variant="outline" className="flex-1" asChild>
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-3 h-3 mr-1" />
-                        Code
-                      </a>
-                    </Button>
-                  )}
-                  {!project.liveUrl && !project.github && (
-                    <Button size="sm" variant="outline" className="flex-1" disabled>
-                      <ExternalLink className="w-3 h-3 mr-1" />
-                      Coming Soon
-                    </Button>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
 
         {/* Call to Action */}
         <div className="text-center animate-fade-in">
           <Card className="max-w-2xl mx-auto bg-gradient-primary text-primary-foreground border-0 shadow-glow">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4">Interested in Collaboration?</h3>
+              <h3 className="text-2xl font-bold mb-4">Let's Build Intelligent Solutions Together</h3>
               <p className="mb-6 opacity-90">
-                I'm always excited to work on innovative projects and contribute to open-source initiatives.
-                Let's build something amazing together!
+                Experienced Full-Stack Developer with deep expertise in AI/ML integration. 
+                Ready to deliver production-grade applications that combine modern web technologies with intelligent capabilities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="secondary" asChild>
