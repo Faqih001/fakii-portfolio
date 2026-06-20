@@ -409,7 +409,7 @@ const Projects = () => {
       technologies: ["React", "Node.js", "Supabase", "Google Gemini", "Mpesa", "TypeScript"],
       features: ["AI Homework Help", "Image Analysis", "Progress Tracking", "Payment Integration"],
       categories: ["AI/ML", "Education"],
-      liveUrl: "https://homeworkhelper.example.com",
+      liveUrl: "https://parent-assignment-helper.vercel.app/",
       icon: <Code className="w-6 h-6" />,
       color: "from-yellow-500 to-orange-600"
     },
